@@ -1,0 +1,30 @@
+.advantages {
+background: var(--color-dark-purple);
+}
+.advantages-title {
+    color: var(--color-white-default);
+    display: none;
+}
+.advantages-wrap {
+
+}
+
+.advantages-list {
+
+}
+
+.advantages-item {
+
+}
+
+.advantages-icon {
+
+}
+
+.advantages-subtitle {
+color: var(--color-white-default);
+}
+
+.advantages-text {
+color: var(--color-white-translucent);
+}
