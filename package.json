@@ -1,11 +1,11 @@
 {
-  "name": "sweet_dreams_v1.0",
+  "name": "vanilla-app-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/sweet_dreams_v1.0/",
+    "build": "vite build --base=/vanilla-app-template/",
     "preview": "vite preview"
   },
   "devDependencies": {
