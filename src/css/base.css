@@ -12,5 +12,14 @@
 --color-point-list-border:#ECEDED;
 --color-placeholder:rgba(64, 64, 64, 0.3);
 --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  }
+body {
+  color: var(--color-black);
+  font-family: 'Roboto', 'Open Sans', 'Raleway', 'Arial', sans-serif;
+  background-color: var(--color-white);
+}
+
+.no-scroll{
+  overflow: hidden;
+}
