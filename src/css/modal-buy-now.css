@@ -2,6 +2,8 @@
   position: relative;
 
   padding: 32px 0;
+
+  border-radius: 15px;
 }
 
 .buy-close {
@@ -80,23 +82,28 @@
   gap: 14px;
 }
 
-/* .modal-buy-phone {
+.modal-buy-phone {
   position: relative;
-} */
+}
 
 .buy-flag {
   position: absolute;
+  width: 24px;
+  height: 18px;
   left: 18;
   top: 14;
+  z-index: 100;
 }
 
 .buy-mastercard {
   position: absolute;
+  width: 32px;
+  height: 21px;
 }
 
-/* .buy-card-input {
+.buy-card-input {
   position: relative;
-} */
+}
 
 .modal-buy-inputs {
   margin-bottom: 18px;
@@ -127,4 +134,8 @@ textarea {
   font-size: 14px;
   line-height: 1.2;
   color: var(--color-white-default);
+}
+
+@media screen and (min-width: 375px) {
+  max-width: ;
 }
