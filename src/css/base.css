@@ -1,49 +1,48 @@
 :root {
-  --color-black: #111111;
-  --color-black-translucent: rgba(17, 17, 17, 0.7);
-  --color-black-transparent: rgba(17, 17, 17, 0.1);
-  --color-dark-purple: #1e1823;
-  --color-orange: #fd9222;
-  --color-light-orange: #fcf1e0;
-  --color-white-default: #ffffff;
-  --color-white: #fafafa;
-  --color-white-translucent: rgba(255, 255, 255, 0.7);
-  --color-point-list: #4c4c4c;
-  --color-point-list-border: #eceded;
-  --color-placeholder: rgba(64, 64, 64, 0.3);
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+--color-black:#111111;
+--color-black-translucent:rgba(17, 17, 17, 0.7);
+--color-black-transparent:rgba(17, 17, 17, 0.1);
+--color-dark-purple:#1E1823;
+--color-orange:#FD9222;
+--color-light-orange:#FCF1E0;
+--color-white-default:#ffffff;
+--color-white:#FAFAFA;
+--color-white-translucent:rgba(255, 255, 255, 0.7);
+--color-point-list:#4C4C4C;
+--color-point-list-border:#ECEDED;
+--color-placeholder:rgba(64, 64, 64, 0.3);
+--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
   color: var(--color-black);
-  font-family: 'Montserrat', 'Roboto', 'Open Sans', 'Raleway', 'Arial',
-    sans-serif;
+  font-family: 'Montserrat', 'Roboto', 'Open Sans', 'Raleway', 'Arial', sans-serif;
   background-color: var(--color-white);
 }
 
 .container {
-  width: 100%;
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-  }
+}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
   .container {
     max-width: 1200px;
   }
 }
 
-.no-scroll {
+.no-scroll{
   overflow: hidden;
 }
 
