@@ -1,0 +1,147 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--color-dark-purple);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer-components {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-component {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-component {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-component {
+    margin-bottom: 58px;
+  }
+}
+
+.footer-heading {
+  max-width: 300px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--color-white-default);
+}
+
+.footer-heading-accent-cololr {
+  color: var(--color-orange);
+}
+
+.footer-contacts-heading {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-white-default);
+}
+
+.footer-contacts {
+  margin-right: 113px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min_width: 1200px) {
+  .footer-contacts {
+    margin-right: 65px;
+  }
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer-contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--color-white-default);
+  transition: color 250ms var(--timing-function);
+}
+
+.footer-contacts-link :hover,
+.footer-contacts-link :focus {
+  color: var(--color-orange);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 0 14px;
+}
+
+@media screen and (min_width: 768px) {
+  .footer-soc-list {
+    gap: 0 18px;
+  }
+}
+
+.footer-soc-icon {
+  width: 22px;
+  height: 22px;
+  stroke: var(--color-white-default);
+  transition: stroke 250ms var(--timing-function);
+}
+
+.footer-soc-icon :hover,
+.footer-soc-icon :focus {
+  stroke: var(--color-orange);
+}
+
+.footer-site-nav {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-site-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--color-white-default);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.footer-site-nav-link:hover,
+.footer-site-nav-link:focus {
+  color: var(--color-orange);
+}
+
+.footer-site-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-site-nav-list {
+    flex-direction: row;
+    gap: 0 24px;
+  }
+}
