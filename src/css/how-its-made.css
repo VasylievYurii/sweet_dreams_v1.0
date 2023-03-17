@@ -88,4 +88,7 @@ padding-bottom: 32px;
         width: 516px;
         margin-top: 0;
     }
+    .how-its-made-list.hidden{
+        display:none;
+    }
 }
