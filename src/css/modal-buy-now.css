@@ -36,6 +36,8 @@
 .buy-choco-item {
   display: inline-block;
 
+  background-color: var(--color-white);
+
   border: 1px solid var(--color-black-transparent);
   border-radius: 15px;
   padding: 32px 32px 28px;
@@ -137,5 +139,7 @@ textarea {
 }
 
 @media screen and (min-width: 375px) {
-  max-width: ;
+  .modal-buy-now {
+    max-width: 311px;
+  }
 }
