@@ -1,28 +1,130 @@
+.modal-buy-now {
+  position: relative;
+
+  padding: 32px 0;
+}
+
+.buy-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  stroke: var(--color-black);
+}
+
 .modal-buy-title {
+  margin-bottom: 32px;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
-.modal-buy-personal {
+.buy-title-accent {
+  color: var(--color-orange);
+}
+
+.buy-choco-list {
+  margin-bottom: 32px;
+}
+
+.buy-choco-item {
+  display: inline-block;
+
+  border: 1px solid var(--color-black-transparent);
+  border-radius: 15px;
+  padding: 32px 32px 28px;
+}
+
+.buy-choco-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-description {
+  display: inline-block;
+  padding: 8px 29px;
+  margin-top: 16px;
+  max-width: fit-content;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-black);
+  text-align: center;
+
+  border: 1px solid var(--color-black-transparent);
+  border-radius: 100px;
+  background-color: var(--color-white);
 }
 
 .modal-buy-input {
   display: block;
+  width: 100%;
+}
+
+.modal-buy-input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-placeholder);
+}
+
+.modal-buy-personal {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* .modal-buy-phone {
+  position: relative;
+} */
+
+.buy-flag {
+  position: absolute;
+  left: 18;
+  top: 14;
+}
+
+.buy-mastercard {
+  position: absolute;
+}
+
+/* .buy-card-input {
+  position: relative;
+} */
+
+.modal-buy-inputs {
+  margin-bottom: 18px;
 }
 
 .modal-buy-subtitle {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
 }
 
-.modal-buy-input:nth-of-type(1) {
-  margin-bottom: 14px;
+textarea {
+  resize: none;
+  /* width: 100%; */
+}
+
+.modal-buy-btn {
+  padding: 12px 28px;
+  background-color: var(--color-orange);
+
+  border: none;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-white-default);
 }
