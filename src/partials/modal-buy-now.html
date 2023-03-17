@@ -1,34 +1,125 @@
-<div class="modal-buy-now">
-  <h2 class="modal-buy-title">bUY nOW</h2>
+<div class="container">
+  <div class="modal-buy-now">
+    <svg class="buy-close" width="12" height="12">
+      <use href="../img/icons.svg#close"></use>
+    </svg>
 
-  <ul>
-    <li>
-      <img src="" alt="" />
-      <div></div>
-    </li>
-    <li>
-      <img src="" alt="" />
-    </li>
-    <li>
-      <img src="" alt="" />
-    </li>
-  </ul>
+    <h2 class="modal-buy-title">
+      <span class="buy-title-accent">bUY</span> nOW
+    </h2>
 
-  <label class="modal-buy-block" for="personal-info">
-    <p class="modal-buy-subtitle">Personal information!</p>
-    <div class="modal-buy-personal">
+    <ul class="buy-choco-list">
+      <li class="buy-choco-item">
+        <div class="buy-choco-content">
+          <img
+            srcset="
+              ../img/buy-now/mobile-pieces.png    1x,
+              ../img/buy-now/mobile-pieces@2x.png 2x
+            "
+            src="../img/buy-now/mobile-pieces.png"
+            alt="chocolate piece"
+          />
+          <p class="buy-description">100 g</p>
+        </div>
+      </li>
+      <li class="buy-choco-item">
+        <div class="buy-choco-content">
+          <img
+            srcset="
+              ../img/buy-now/mobile-column        1x,
+              ../img/buy-now/mobile-column@2x.png 2x
+            "
+            src="../img/buy-now/mobile-column.png"
+            alt="chocolate mix"
+          />
+          <p class="buy-description">200 g</p>
+        </div>
+      </li>
+      <li class="buy-choco-item">
+        <div class="buy-choco-content">
+          <img
+            srcset="
+              ../img/buy-now/mobile-chocolate.png    1x,
+              ../img/buy-now/mobile-chocolate@2x.png 2x
+            "
+            src="../img/buy-now/mobile-chocolate.png"
+            alt="chocolate bar"
+          />
+          <p class="buy-description">300 g</p>
+        </div>
+      </li>
+    </ul>
+
+    <label class="buy-personal" for="personal-info">
+      <p class="modal-buy-subtitle">Personal information</p>
+      <div class="modal-buy-personal">
+        <input
+          class="modal-buy-input"
+          type="text"
+          name="personal-info"
+          id="personal-info"
+          placeholder="Name"
+        />
+        <input
+          class="modal-buy-input modal-buy-inputs"
+          type="text"
+          name="personal-info"
+          id="personal-info"
+          placeholder="Surname"
+        />
+      </div>
+    </label>
+
+    <label class="buy-email" for="buy-email">
+      <p class="modal-buy-subtitle">Email</p>
       <input
-        class="modal-buy-input"
-        type="text"
-        name="personal-info"
-        id="personal-info"
+        class="modal-buy-input modal-buy-inputs"
+        type="email"
+        name="buy-email"
+        id="buy-email"
+        placeholder="Enter your email"
       />
+    </label>
+
+    <label class="buy-phone" for="buy-phone">
+      <p class="modal-buy-subtitle">Phone number</p>
+      <svg class="buy-flag">
+        <use href="../img/icons.svg#flag"></use>
+      </svg>
+      <div class="modal-buy-phone">
+        <input
+          class="modal-buy-input modal-buy-inputs"
+          type="number"
+          name="buy-phone"
+          id="buy-phone"
+          placeholder="Phone number"
+        />
+      </div>
+    </label>
+
+    <label class="buy-card" for="buy-phone">
+      <p class="modal-buy-subtitle">Card number</p>
       <input
-        class="modal-buy-input"
-        type="text"
-        name="personal-info"
-        id="personal-info"
+        class="modal-buy-input modal-buy-inputs buy-card-input"
+        type="number"
+        name="buy-card"
+        id="buy-card"
+        placeholder="Enter card"
       />
-    </div>
-  </label>
+      <svg class="buy-mastercard">
+        <use href="../img/icons.svg#mastercard"></use>
+      </svg>
+    </label>
+
+    <label class="buy-feedback" for="buy-feedback">
+      <p class="modal-buy-subtitle">Comment</p>
+      <textarea
+        class="modal-buy-input modal-buy-inputs"
+        name="buy-feedback"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+
+    <button class="modal-buy-btn" type="submit">Submit</button>
+  </div>
 </div>
