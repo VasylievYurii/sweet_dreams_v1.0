@@ -1,0 +1,64 @@
+<div class="modal-review">
+  <button
+    type="button"
+    aria-label="close modal"
+    class="modal-review__button-close"
+    data-modal-close
+  >
+    <svg class="modal-review__button-close__icon">
+      <!-- <use href="images/icons.svg#close-modal"></use> -->
+    </svg>
+  </button>
+  <h2 class="modal-review__title">
+    leave a review <br class="modal-review__mobile-header-divider" />about
+    <span class="modal-review__title--accent">our chocolate</span>
+  </h2>
+
+  <form action="" class="review-form" name="review-form">
+    <label class="review-form__field">
+      <input
+        class="review-form__input"
+        name="review-form__name-field"
+        type="text"
+        placeholder=" "
+      />
+      <span class="review-form__label">Name</span>
+    </label>
+    <label class="review-form__field">
+      <input
+        class="review-form__input"
+        name="review-form__email-field"
+        type="email"
+        placeholder=" "
+      />
+      <span class="review-form__label">Enter your email</span>
+    </label>
+    <label class="review-form__field">
+      <input
+        class="review-form__input"
+        name="review-form__phone-field"
+        type="tel"
+        placeholder=" "
+      />
+      <span class="review-form__label">Phone number</span>
+    </label>
+    <label class="review-form__field">
+      <textarea
+        class="review-form__input review-form__input--area"
+        name="review-form-comment-area"
+        placeholder=" "
+        autocomplete="off"
+      ></textarea>
+      <span class="review-form__label review-form__label--area"
+        >Enter text</span
+      >
+    </label>
+    <button
+      class="review-form__button-submit"
+      name="review-form-submit"
+      type="submit"
+    >
+      Send
+    </button>
+  </form>
+</div>
