@@ -1,12 +1,12 @@
-<div class="modal-review">
+<div class="modal-review modal-review--hidden">
   <button
     type="button"
     aria-label="close modal"
     class="modal-review__button-close"
     data-modal-close
   >
-    <svg class="modal-review__button-close__icon">
-      <!-- <use href="images/icons.svg#close-modal"></use> -->
+    <svg class="modal-review__button-close-icon">
+      <use href="../img/icons.svg#close"></use>
     </svg>
   </button>
   <h2 class="modal-review__title">
@@ -21,6 +21,8 @@
         name="review-form__name-field"
         type="text"
         placeholder=" "
+        pattern="\b([A-Z][-,a-z. ']+[ ]*)+"
+        required
       />
       <span class="review-form__label">Name</span>
     </label>
@@ -30,17 +32,28 @@
         name="review-form__email-field"
         type="email"
         placeholder=" "
+        pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$"
+        required
       />
       <span class="review-form__label">Enter your email</span>
     </label>
     <label class="review-form__field">
       <input
-        class="review-form__input"
+        class="review-form__input review-form__input--phone"
         name="review-form__phone-field"
         type="tel"
         placeholder=" "
+        pattern="^[1-9][0-9](-)?[0-9]{3}(-)?[0-9]{2}(-)?[0-9]{2}$"
+        required
       />
-      <span class="review-form__label">Phone number</span>
+      <span class="review-form__label review-form__label--phone">Phone number</span>
+      <span class="review-form__area-phone">
+        <svg class="modal-review__icon-phone">
+          <use href="../img/icons.svg#flag"></use>
+        </svg>
+        +380
+      </span>
+      
     </label>
     <label class="review-form__field">
       <textarea
@@ -61,4 +74,8 @@
       Send
     </button>
   </form>
+</div>
+
+<div class="test-modal test-modal--hidden">
+
 </div>
