@@ -1,0 +1,113 @@
+.top-sellers-container {
+    width: 100%;
+    margin-right:auto;
+    margin-left: auto;
+}
+.top-sellers {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.top-sellers-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;  
+    color: var(--color-black);
+}
+.top-sellers-title-color {
+    color: var(--color-orange);
+}
+.top-sellers-img {
+    border-radius: 15px;
+}
+.top-sellers-button {
+    width: 120px;
+    height: 41px;
+    margin-top: 20px;
+    text-align: center;
+    background: var(--color-orange);
+    border-radius: 100px;
+    border-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-white-default);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+.top-sellers-button:hover,
+.top-sellers-button:focus {
+    background-color: var(--color-light-orange);
+    color: var(--color-orange);
+}
+.top-sellers-about {
+    display: flex;
+    justify-content: center;
+}
+.top-sellers-text {
+    max-width: 306px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+}
+.top-sellers-item {
+    margin-top: 32px;
+}
+.top-sellers-text-mobile {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .top-sellers-text-desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .top-sellers-text-mobile {
+        display: none;
+    }
+    .top-sellers {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .top-sellers-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    .top-sellers-list {
+        display: flex;
+        gap: 16px;
+        margin-top: 50px;
+        margin-bottom: 32px;
+    }
+    .top-sellers-button {
+        width: 162px;
+        height: 50px;
+        margin-top: 0;
+    }
+    .top-sellers-about {
+    justify-content: space-between;
+    align-items: center;
+    }
+    .top-sellers-item {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .top-sellers-item:last-child {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .top-sellers-text {
+        max-width: 407px;
+    }
+    .top-sellers {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}

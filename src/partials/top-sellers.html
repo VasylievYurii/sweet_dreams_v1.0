@@ -2,3 +2,40 @@
 Текст “TOP SELLERS” є заголовком секції.
 У секції знаходиться перелік контентних зображень, який необхідно реалізувати як список елементів за допомогою <ul>.
 Кнопка “Buy now” відкриває модальне вікно “Buy now”. -->
+<section class="top-sellers">
+    <div class="top-sellers-container container">
+        <h2 class="top-sellers-title"><span class="top-sellers-title-color">tOp</span> Sellers</h2>
+        <ul class="top-sellers-list">
+            <li class="top-sellers-item">
+                <picture >
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-set.jpg 1x, ../img/top-sellers/desktop-top-sellers-set@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-set.jpg 1x, ../img/top-sellers/tablet-top-sellers-set@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-set.jpg 1x, ../img/top-sellers/mobile-top-sellers-set@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-set.jpg" alt="chocolate and nut">
+                </picture>
+                    <p class="top-sellers-text top-sellers-text-mobile">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao
+                has been around for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+             </li>
+            <li class="top-sellers-item">
+                <picture class="top-sellers-img">
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/tablet-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/mobile-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg" alt="chocolate">
+                </picture>
+            </li>
+            <li class="top-sellers-item">
+                <picture class="top-sellers-img">
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid.jpg" alt="chocolate pyramid">
+                </picture>
+            </li>
+        </ul>
+        <div class="top-sellers-about">
+            <p class="top-sellers-text top-sellers-text-desktop">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
+        thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+            <button class="top-sellers-button" type="button">Buy now</button>
+        </div>
+    </div>
+</section>
