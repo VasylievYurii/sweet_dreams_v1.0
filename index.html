@@ -20,7 +20,7 @@
     />
   
   <script type="module" crossorigin src="/vanilla-app-template/assets/index-4c3bb0ed.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-1bfeacf5.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-9540a0f4.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./" class="nav-link">Hello</a>
+        <a href="./" class="nav-link"></a>
       </li>
 
       <li class="nav-item">
@@ -95,7 +95,43 @@
 Текст “TOP SELLERS” є заголовком секції.
 У секції знаходиться перелік контентних зображень, який необхідно реалізувати як список елементів за допомогою <ul>.
 Кнопка “Buy now” відкриває модальне вікно “Buy now”. -->
-
+<section class="top-sellers">
+    <div class="top-sellers-container container">
+        <h2 class="top-sellers-title"><span class="top-sellers-title-color">tOp</span> Sellers</h2>
+        <ul class="top-sellers-list">
+            <li class="top-sellers-item">
+                <picture >
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-set.jpg 1x, ../img/top-sellers/desktop-top-sellers-set@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-set.jpg 1x, ../img/top-sellers/tablet-top-sellers-set@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-set.jpg 1x, ../img/top-sellers/mobile-top-sellers-set@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-set.jpg" alt="chocolate and nut">
+                </picture>
+                    <p class="top-sellers-text top-sellers-text-mobile">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao
+                has been around for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+             </li>
+            <li class="top-sellers-item">
+                <picture class="top-sellers-img">
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/tablet-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/mobile-top-sellers-pyramid-nuts@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg" alt="chocolate">
+                </picture>
+            </li>
+            <li class="top-sellers-item">
+                <picture class="top-sellers-img">
+                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid@2x.jpg 2x">
+                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid.jpg" alt="chocolate pyramid">
+                </picture>
+            </li>
+        </ul>
+        <div class="top-sellers-about">
+            <p class="top-sellers-text top-sellers-text-desktop">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
+        thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+            <button class="top-sellers-button" type="button">Buy now</button>
+        </div>
+    </div>
+</section>
     <!-- Sergey Mushtukov -->
     <!-- <br>Reviews<br>
 Текст “CHOCOLATE IS LOVED” є заголовком секції.
@@ -117,6 +153,46 @@
 Перелік якірних посилань має бути реалізовано як список елементів за допомогою <ul>.  -->
 
 
+  <div class="modal-review__backdrop  modal-review__backdrop--hidden">
+  <div class="modal-buy-now">
+  <h2 class="modal-buy-title">bUY nOW</h2>
+
+  <ul>
+    <li>
+      <img src="" alt="" />
+      <div></div>
+    </li>
+    <li>
+      <img src="" alt="" />
+    </li>
+    <li>
+      <img src="" alt="" />
+    </li>
+  </ul>
+
+  <label class="modal-buy-block" for="personal-info">
+    <p class="modal-buy-subtitle">Personal information</p>
+    <div class="modal-buy-personal">
+      <input
+        class="modal-buy-input"
+        type="text"
+        name="personal-info"
+        id="personal-info"
+      />
+      <input
+        class="modal-buy-input"
+        type="text"
+        name="personal-info"
+        id="personal-info"
+      />
+    </div>
+  </label>
+</div>
+
+
+  
+  
+</div>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
