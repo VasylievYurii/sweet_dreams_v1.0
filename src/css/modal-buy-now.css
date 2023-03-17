@@ -1,0 +1,28 @@
+.modal-buy-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.modal-buy-personal {
+  display: flex;
+}
+
+.modal-buy-input {
+  display: block;
+}
+
+.modal-buy-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+
+.modal-buy-input:nth-of-type(1) {
+  margin-bottom: 14px;
+}
