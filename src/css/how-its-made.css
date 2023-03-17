@@ -39,7 +39,7 @@ padding-bottom: 32px;
 
 .how-its-made-article{  
     width: 100%;
-    max-width: 335px;
+    /* max-width: 335px; */
     padding: 20px 14px;
     margin-top: 20px;
 
@@ -68,10 +68,26 @@ border-radius: 15px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
-
-
 }
 
 .how-its-made-list:not(:last-child){
     padding-bottom: 18px;
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1200px){
+    .how-its-made-cover{
+        display: flex;
+    }
+    .how-its-made-thumb{
+        width: 600px;
+        height: 400px;
+    }
+    .how-its-made-article{
+        width: 516px;
+        margin-top: 0;
+    }
 }
