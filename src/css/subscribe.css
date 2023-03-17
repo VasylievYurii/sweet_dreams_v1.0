@@ -1,6 +1,6 @@
 .subscribe{
     position: relative;
-    background-image: url(../img/subcribe/mobile-background-subcribe.jpg);
+    background-image: url(../img/subscribe/mobile-background-subscribe.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -173,7 +173,7 @@
 
 @media screen and (min-width: 768px) {
     .subscribe{
-        background-image: url(../img/subcribe/tablet-background-subcribe.jpg);
+        background-image: url(../img/subscribe/tablet-background-subscribe.jpg);
         background-size: 768px;
         padding: 72px 0;
     }
@@ -251,7 +251,7 @@
 
 @media screen and (min-width: 1200px) {
     .subscribe {
-        background-image: url(../img/subcribe/desktop-background-subcribe.jpg);
+        background-image: url(../img/subscribe/desktop-background-subscribe.jpg);
         background-size: 1200px;
     }
 
