@@ -5,7 +5,7 @@
 // 1)  Для початку необхідно і модалці і попапу задати по 2 класи з певними атрибутами:
 
 // - базовий клас модалки/попапа (modalRootClass/popupRootClass), це клас зовнішнього div (чи як у вас там зроблено) модалки. В цьому класі, щоб модалка відображалася, коли не прихована, має бути атрибут
- 
+
 // opacity: 1;
 
 // - клас модалки/попапа (modalHideClass/popupHideClass), який добавля'ється скриптом на модалку і відповідає за його приховування:
@@ -32,55 +32,85 @@
 //     тут моє ...
 //   },
 //   {
-//     тут ваше, тобто вийде такий перелік параметрів в фігурних дужках, типу 
-    
+//     тут ваше, тобто вийде такий перелік параметрів в фігурних дужках, типу
+
 //     {моє},{ваше}, {може іще чиєсь}
 //   },
 // ]
 
 // ну і все, далі має працювати.
 
-// З нюансів - натискання на Send форми відкриває попап, але тупо ігнорує, чи ввели ви щось в саму форму :) Але фіча, будем вважати :) 
-
+// З нюансів - натискання на Send форми відкриває попап, але тупо ігнорує, чи ввели ви щось в саму форму :) Але фіча, будем вважати :)
 
 (() => {
   const refs = {
-
     selectors: [
       {
-      openBtn: '.top-sellers-button',
-      closeBtn: '.js-reviewClose',
-      submitBtn: '.js-reviewSubmit',
-      closePopupBtn: '.js-reviewPopupClose',
-      modalRootClass: '.modal-review',
-      modalHideClass: 'modal-review--hidden',
-      popupRootClass: '.popup-review',
-      popupHideClass: 'popup-review--hidden',
+        isOneStep: false,
+        openBtn: '.top-sellers-button',
+        closeBtn: '.js-reviewClose',
+        submitBtn: '.js-reviewSubmit',
+        closePopupBtn: '.js-reviewPopupClose',
+        modalRootClass: '.modal-review',
+        modalHideClass: 'modal-review--hidden',
+        popupRootClass: '.popup-review',
+        popupHideClass: 'popup-review--hidden',
+      },
+      {
+        isOneStep: true,
+        openBtn: '.subscribe-btn',
+        closeBtn: '.subscribe-form-close',
+        submitBtn: '.subscribe-form-submit',
+        closePopupBtn: '.js--mockup',
+        modalRootClass: '.subscribe-form',
+        modalHideClass: 'subscribe-form-hidden',
+        popupRootClass: '.js--mockup',
+        popupHideClass: 'js--mockup',
       },
     ],
     backdrop: document.querySelector('.modal-review__backdrop'),
     bodyNoScroll: document.querySelector('body'),
 
     init: function (selectors) {
-      for (let paramSet of selectors){
+      for (let paramSet of selectors) {
         document
-        .querySelector(paramSet.openBtn)
-        .addEventListener('click', () => toggleModal(paramSet.modalRootClass, paramSet.modalHideClass) );
-        
-        document
-        .querySelector(paramSet.closeBtn)
-        .addEventListener('click', () => toggleModal(paramSet.modalRootClass, paramSet.modalHideClass) );
+          .querySelector(paramSet.openBtn)
+          .addEventListener('click', () =>
+            toggleModal(paramSet.modalRootClass, paramSet.modalHideClass)
+          );
 
         document
-        .querySelector(paramSet.submitBtn)
-        .addEventListener('click', () => showPopup(paramSet.modalRootClass, paramSet.modalHideClass, paramSet.popupRootClass, paramSet.popupHideClass) );
+          .querySelector(paramSet.closeBtn)
+          .addEventListener('click', () =>
+            toggleModal(paramSet.modalRootClass, paramSet.modalHideClass)
+          );
+
+        if (paramSet.isOneStep) {
+          document
+          .querySelector(paramSet.submitBtn)
+          .addEventListener('click', () =>
+            toggleModal(paramSet.modalRootClass, paramSet.modalHideClass)
+          );
+        } else {
+        document
+          .querySelector(paramSet.submitBtn)
+          .addEventListener('click', () =>
+            showPopup(
+              paramSet.modalRootClass,
+              paramSet.modalHideClass,
+              paramSet.popupRootClass,
+              paramSet.popupHideClass
+            )
+          );
 
         document
-        .querySelector(paramSet.closePopupBtn)
-        .addEventListener('click', () => toggleModal(paramSet.popupRootClass, paramSet.popupHideClass) );
+          .querySelector(paramSet.closePopupBtn)
+          .addEventListener('click', () =>
+            toggleModal(paramSet.popupRootClass, paramSet.popupHideClass)
+          );
+        }
       }
     },
-     
   };
 
   function toggleBackdrop() {
@@ -95,11 +125,15 @@
     toggleBackdrop();
   }
 
-  function showPopup(modalRootClass, modalHideClass, popupRootClass, popupHideClass) {
+  function showPopup(
+    modalRootClass,
+    modalHideClass,
+    popupRootClass,
+    popupHideClass
+  ) {
     document.querySelector(modalRootClass).classList.toggle(modalHideClass);
     document.querySelector(popupRootClass).classList.toggle(popupHideClass);
   }
 
   refs.init(refs.selectors);
-
 })();
