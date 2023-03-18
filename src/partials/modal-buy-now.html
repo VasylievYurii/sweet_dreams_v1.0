@@ -1,6 +1,6 @@
 <div class="container">
   <div class="modal-buy-now">
-    <svg class="buy-close" width="12" height="12">
+    <svg class="buy-close">
       <use href="../img/icons.svg#close"></use>
     </svg>
 
@@ -51,75 +51,103 @@
     </ul>
 
     <form name="modal-buy-now" autocomplete="on">
-      <label class="buy-personal" for="personal-info">
-        <p class="modal-buy-subtitle">Personal information</p>
-        <div class="modal-buy-personal">
+      <div class="modal-buy-inputs">
+        <label class="buy-personal" for="personal-info">
+          <span class="modal-buy-subtitle">Personal information</span>
+          <span class="modal-buy-personal">
+            <input
+              class="modal-buy-input"
+              type="text"
+              name="personal-info"
+              id="personal-info"
+              placeholder="Name"
+              required
+              pattern="^[a-zA-Zа-яА-Я]+"
+              minlength="2"
+            />
+            <input
+              class="modal-buy-input"
+              type="text"
+              name="personal-info"
+              id="personal-info"
+              placeholder="Surname"
+              required
+              pattern="^[a-zA-Zа-яА-Я]+"
+              minlength="2"
+            />
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-buy-inputs">
+        <label class="buy-email" for="buy-email">
+          <span class="modal-buy-subtitle">Email</span>
           <input
             class="modal-buy-input"
-            type="text"
-            name="personal-info"
-            id="personal-info"
-            placeholder="Name"
+            type="email"
+            name="buy-email"
+            id="buy-email"
+            placeholder="Enter your email"
+            required
           />
-          <input
-            class="modal-buy-input modal-buy-inputs"
-            type="text"
-            name="personal-info"
-            id="personal-info"
-            placeholder="Surname"
-          />
-        </div>
-      </label>
+        </label>
+      </div>
 
-      <label class="buy-email" for="buy-email">
-        <p class="modal-buy-subtitle">Email</p>
-        <input
-          class="modal-buy-input modal-buy-inputs"
-          type="email"
-          name="buy-email"
-          id="buy-email"
-          placeholder="Enter your email"
-        />
-      </label>
+      <div class="modal-buy-inputs">
+        <label class="buy-phone" for="buy-phone">
+          <span class="modal-buy-subtitle">Phone number</span>
 
-      <label class="buy-phone" for="buy-phone">
-        <p class="modal-buy-subtitle">Phone number</p>
-        <svg class="buy-flag">
-          <use href="../img/icons.svg#flag"></use>
-        </svg>
-        <div class="modal-buy-phone">
-          <input
-            class="modal-buy-input modal-buy-inputs"
-            type="number"
-            name="buy-phone"
-            id="buy-phone"
-            placeholder="Phone number"
-          />
-        </div>
-      </label>
+          <span class="buy-phone-icon-wrapper">
+            <svg class="buy-flag">
+              <use href="../img/icons.svg#flag"></use>
+            </svg>
+            <span class="country-code">+380</span>
+            <input
+              class="modal-buy-input modal-buy-phone"
+              type="number"
+              name="buy-phone"
+              id="buy-phone"
+              placeholder="Phone number"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+          </span>
+        </label>
+      </div>
 
-      <label class="buy-card" for="buy-phone">
-        <p class="modal-buy-subtitle">Card number</p>
-        <input
-          class="modal-buy-input modal-buy-inputs buy-card-input"
-          type="number"
-          name="buy-card"
-          id="buy-card"
-          placeholder="Enter card"
-        />
-        <svg class="buy-mastercard">
-          <use href="../img/icons.svg#mastercard"></use>
-        </svg>
-      </label>
+      <div class="modal-buy-inputs">
+        <label class="buy-card" for="buy-phone">
+          <span class="modal-buy-subtitle">Card number</span>
 
-      <label class="buy-feedback" for="buy-feedback">
-        <p class="modal-buy-subtitle">Comment</p>
-        <textarea
-          class="modal-buy-input modal-buy-inputs"
-          name="buy-feedback"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
+          <span class="modal-mastercard-wrapper">
+            <input
+              class="modal-buy-input buy-card-input"
+              type="number"
+              name="buy-card"
+              id="buy-card"
+              placeholder="Enter card"
+              required
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+              title="xxxx-xxxx-xxxx-xxxx"
+            />
+            <svg class="buy-mastercard">
+              <use href="../img/icons.svg#mastercard"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-buy-inputs">
+        <label class="buy-feedback" for="buy-feedback">
+          <span class="modal-buy-subtitle">Comment</span>
+          <textarea
+            class="modal-buy-input modal-buy-text"
+            name="buy-feedback"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+      </div>
 
       <button class="modal-buy-btn" type="submit">Submit</button>
     </form>
