@@ -18,10 +18,10 @@
 
 }
 
-/* .modal-review__backdrop--hidden {
+.modal-review__backdrop--hidden {
     opacity: 0;
     pointer-events: none;
-} */
+}
 
 
 .page__body--no-scroll {

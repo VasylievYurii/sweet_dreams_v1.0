@@ -11,26 +11,26 @@
     width: 311px;
     min-height: 350px;
 
-    /* background-color: var(--color-orange); */
-    /* background: var(--color-orange) left bottom contain no-repeat url("../img/mobile-chocolate-modal.png"); */
+    background-color: var(--color-orange);
     background-image: url("../img/mobile-chocolate-modal.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 276px;
+    background-position: left bottom;
 
     border-radius: 15px;
 
     opacity: 1;
 
     transition: transform 250ms var(--timing-function),
-                opacity 250ms var(--timing-function);
+        opacity 250ms var(--timing-function);
 
 }
 
-/* .popup-review--hidden {
+.popup-review--hidden {
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
     pointer-events: none;
-} */
+}
 
 .popup-review__button-close {
 
@@ -71,7 +71,7 @@
 .popup-review__button-close:focus {
     background-color: var(--color-orange);
     color: var(--color-light-orange);
-    border: 1px solid var(--color-light-orange);
+    border: 2px solid var(--color-light-orange);
 
     outline: none;
 }
@@ -102,11 +102,72 @@
     letter-spacing: -0.02em;
 }
 
-@media  (max-width: 767px) and (min-device-pixel-ratio: 2),
+
+@media screen and (min-width: 768px) {
+    .popup-review {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+
+        transform: translate(-50%, -50%) scale(1);
+
+        padding: 49px 49px 49px 170px;
+
+        width: 516px;
+        min-height: 414px;
+
+        background-image: url("../img/desktop-tablet-chocolate-modal.png");
+        background-size: 282px;
+
+    }
+
+    .popup-review__button-close {
+        top: 24px;
+        right: 24px;
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .popup-review__button-close-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .popup-review__title {
+        margin-top: 114px;
+        
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
+    .popup-review__text {
+        margin-top: 8px;
+        width: unset;
+        
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.33;
+    }
+}
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
 (max-width: 767px) and (min-resolution: 192dpi),
 (max-width: 767px) and (min-resolution: 2dppx) {
 
-            .popup-review {
-                background: var(--color-orange) left bottom contain no-repeat url("../img/mobile-chocolate-modal@2x.png");          
-            }
+    .popup-review {
+        background-image: url("../img/mobile-chocolate-modal@2x.png");
+    }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+(min-width: 768px) and (min-resolution: 192dpi),
+(min-width: 768px) and (min-resolution: 2dppx) {
+
+    .popup-review {
+        background-image: url("../img/desktop-tablet-chocolate-modal@2x.png");
+    }
 }
