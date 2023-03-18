@@ -6,15 +6,15 @@
 
 .how-its-made-title{
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 1.2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
 
-text-align: center;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-padding-bottom: 32px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding-bottom: 32px;
 }
 
 .how-its-made-title-special{
@@ -55,10 +55,6 @@ padding-bottom: 32px;
     margin-bottom: 20px;
 }
 
-.how-its-made-lists{
-
-}
-
 .how-its-made-list{
     font-family: 'Montserrat';
     font-style: normal;
@@ -68,22 +64,56 @@ padding-bottom: 32px;
     letter-spacing: -0.02em;
 }
 
+.how-its-made-lists {
+    list-style: url("../img/dot.svg");
+    padding-left: 14px;
+  }
+
 .how-its-made-list:not(:last-child){
     padding-bottom: 18px;
 }
 
 @media screen and (min-width: 768px){
+    .how-its-made-container.container{
+        padding-left: 77px;
+        padding-right: 77px;
+    } 
 
+    .how-its-made-thumb{
+        height: 400px;
+    }
+
+    .how-its-made-article {
+        padding: 32px 102px 32px 32px;
+    }
+    .how-its-made-article-title{
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 1200px){
+    .how-its-made-container.container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .how-its-made-article {
+        padding: 32px 59px 94px 32px;
+    }
+
     .how-its-made-cover{
         display: flex;
+        gap:20px;
     }
+
+    .how-its-made-list:not(:last-child){
+        padding-bottom: 24px;
+    }
+
     .how-its-made-thumb{
         width: 600px;
-        height: 400px;
     }
+
     .how-its-made-article{
         width: 516px;
         margin-top: 0;
