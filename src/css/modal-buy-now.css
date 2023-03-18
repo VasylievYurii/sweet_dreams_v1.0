@@ -138,8 +138,32 @@ textarea {
   color: var(--color-white-default);
 }
 
-@media screen and (min-width: 375px) {
+/*MOBILE*/
+
+@media screen and (max-width: 767px) {
   .modal-buy-now {
     max-width: 311px;
   }
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  .buy-card-input {
+    display: flex;
+    gap: 16px;
+  }
+
+  .buy-choco-item {
+    max-width: 160px;
+  }
+
+  .modal-buy-personal {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1200px) {
 }
