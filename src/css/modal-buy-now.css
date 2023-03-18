@@ -348,8 +348,9 @@
 .thanks-close {
   width: 16px;
   height: 16px;
-
   stroke: var(--color-orange);
+
+  transition: stroke 250ms var(--timing-function);
 }
 
 .modal-icon-wrapper {
@@ -362,11 +363,25 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  border: transparent;
 
   background-color: var(--color-light-orange);
 
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+}
+
+.modal-icon-wrapper:is(:hover, :focus) {
+  background-color: var(--color-orange);
+  border: 2px solid var(--color-light-orange);
+  outline: none;
+}
+
+.modal-icon-wrapper:is(:hover, :focus) .thanks-close {
+  stroke: var(--color-light-orange);
 }
 
 .thank-you-subtitle {
