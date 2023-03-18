@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (min_width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 65px;
   }
