@@ -1,22 +1,23 @@
 .popup-review {
-/* 
+
     position: absolute;
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%) scale(1); */
+    transform: translate(-50%, -50%) scale(1);
 
-    position: relative;
-
-
-    padding: 24px;
+    padding: 24px 24px 24px 58px;
 
     width: 311px;
     min-height: 350px;
 
-    background-color: var(--color-orange);
+    /* background-color: var(--color-orange); */
+    /* background: var(--color-orange) left bottom contain no-repeat url("../img/mobile-chocolate-modal.png"); */
+    background-image: url("../img/mobile-chocolate-modal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     border-radius: 15px;
-    border: 1px solid #bababa;
 
     opacity: 1;
 
@@ -41,6 +42,9 @@
     justify-content: center;
     align-items: center;
 
+    width: 28px;
+    height: 28px;
+
     margin: 0;
     padding: 0;
 
@@ -57,8 +61,8 @@
 }
 
 .popup-review__button-close-icon {
-    width: 28px;
-    height: 28px;
+    width: 19px;
+    height: 19px;
     stroke: currentColor;
 
 }
@@ -74,6 +78,8 @@
 
 .popup-review__title {
 
+    margin-top: 60px;
+
     color: var(--color-light-orange);
 
     font-size: 20px;
@@ -82,4 +88,25 @@
     letter-spacing: -0.02em;
 
     text-transform: uppercase;
+}
+
+.popup-review__text {
+    margin-top: 8px;
+    width: 170px;
+
+    color: var(--color-white-default);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+@media  (max-width: 767px) and (min-device-pixel-ratio: 2),
+(max-width: 767px) and (min-resolution: 192dpi),
+(max-width: 767px) and (min-resolution: 2dppx) {
+
+            .popup-review {
+                background: var(--color-orange) left bottom contain no-repeat url("../img/mobile-chocolate-modal@2x.png");          
+            }
 }
