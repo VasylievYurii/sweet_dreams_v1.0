@@ -334,6 +334,7 @@
   background-image: url('../img/mobile-chocolate-modal.png');
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-size: 276px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -342,6 +343,7 @@
   (min-resolution: 2dppx) {
   .modal-buy-thanks {
     background-image: url('../img/mobile-chocolate-modal@2x.png');
+    background-size: 276px;
   }
 }
 
@@ -412,6 +414,7 @@
     border-radius: 15px;
 
     background-image: url('../img/desktop-tablet-chocolate-modal.png');
+    background-size: 276px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -420,6 +423,7 @@
     (min-resolution: 2dppx) {
     .modal-buy-thanks {
       background-image: url('../img/desktop-tablet-chocolate-modal@2x.png');
+      background-size: 276px;
     }
   }
 
