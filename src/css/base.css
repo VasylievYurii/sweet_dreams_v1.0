@@ -11,6 +11,7 @@
 --color-point-list:#4C4C4C;
 --color-point-list-border:#ECEDED;
 --color-placeholder:rgba(64, 64, 64, 0.3);
+--color-gradient:linear-gradient(180deg, #F16529, #D44528);
 --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
