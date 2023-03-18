@@ -143,26 +143,6 @@
   letter-spacing: -0.02em;
 }
 
-/* .country-code::after {
-  position: absolute;
-  left: 42px;
-  top: 0;
-  content: '';
-  display: inline-block;
-  width: 1.5px;
-  height: 25px;
-
-  background-color: var(--color-black-transparent);
-} */
-
-/* .modal-buy-phone::before::placeholder {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 25px;
-  color: var(--color-black-transparent);
-} */
-
 .modal-mastercard-wrapper {
   display: block;
   position: relative;
@@ -339,4 +319,115 @@
   }
 }
 
-/*DESKTOP*/
+/*THANK YOU*/
+
+.modal-buy-thanks {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 311px;
+  padding: 84px 24px 170px 68px;
+  border-radius: 15px;
+
+  background-color: var(--color-orange);
+  background-image: url('../img/mobile-chocolate-modal.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-buy-thanks {
+    background-image: url('../img/mobile-chocolate-modal@2x.png');
+  }
+}
+
+.thanks-close {
+  width: 16px;
+  height: 16px;
+
+  stroke: var(--color-orange);
+}
+
+.modal-icon-wrapper {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  background-color: var(--color-light-orange);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-subtitle {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--color-light-orange);
+}
+
+.thanks-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  color: var(--color-white-default);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-thanks {
+    width: 516px;
+    padding: 154px 77px 154px 163px;
+    border-radius: 15px;
+
+    background-image: url('../img/desktop-tablet-chocolate-modal.png');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-buy-thanks {
+      background-image: url('../img/desktop-tablet-chocolate-modal@2x.png');
+    }
+  }
+
+  .thanks-close {
+    width: 22px;
+    height: 22px;
+  }
+
+  .modal-icon-wrapper {
+    top: 22px;
+    right: 22px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .thank-you-subtitle {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .thanks-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
