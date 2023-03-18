@@ -80,7 +80,9 @@
         padding-left: 77px;
         padding-right: 77px;
     } 
-
+    .how-its-made-title{
+        padding-bottom: 50px;
+    }
     .how-its-made-thumb{
         height: 400px;
     }
