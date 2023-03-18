@@ -13,8 +13,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 
   stroke: var(--color-black);
 }
@@ -246,8 +246,8 @@
     top: 31px;
     right: 31px;
 
-    width: 14px;
-    height: 14px;
+    width: 28px;
+    height: 28px;
   }
 
   .modal-buy-title {
