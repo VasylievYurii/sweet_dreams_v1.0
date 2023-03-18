@@ -17,33 +17,34 @@
 
 body {
   color: var(--color-black);
-  font-family: 'Montserrat', 'Roboto', 'Open Sans', 'Raleway', 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Roboto', 'Open Sans', 'Raleway', 'Arial',
+    sans-serif;
   background-color: var(--color-white);
 }
 
 .container {
-    width: 100%;
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-}
+  }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 
