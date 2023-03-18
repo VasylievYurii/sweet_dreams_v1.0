@@ -211,7 +211,8 @@
   line-height: 1.2;
   color: var(--color-white-default);
 
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 
 .modal-buy-btn:is(:hover, :focus) {
