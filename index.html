@@ -20,7 +20,7 @@
     />
   
   <script type="module" crossorigin src="/vanilla-app-template/assets/index-709b583a.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-8c4cba55.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-bbe0cace.css">
 </head>
 
 <body>
@@ -497,77 +497,79 @@
       </li>
     </ul>
 
-    <label class="buy-personal" for="personal-info">
-      <p class="modal-buy-subtitle">Personal information</p>
-      <div class="modal-buy-personal">
-        <input
-          class="modal-buy-input"
-          type="text"
-          name="personal-info"
-          id="personal-info"
-          placeholder="Name"
-        />
+    <form name="modal-buy-now" autocomplete="on">
+      <label class="buy-personal" for="personal-info">
+        <p class="modal-buy-subtitle">Personal information</p>
+        <div class="modal-buy-personal">
+          <input
+            class="modal-buy-input"
+            type="text"
+            name="personal-info"
+            id="personal-info"
+            placeholder="Name"
+          />
+          <input
+            class="modal-buy-input modal-buy-inputs"
+            type="text"
+            name="personal-info"
+            id="personal-info"
+            placeholder="Surname"
+          />
+        </div>
+      </label>
+
+      <label class="buy-email" for="buy-email">
+        <p class="modal-buy-subtitle">Email</p>
         <input
           class="modal-buy-input modal-buy-inputs"
-          type="text"
-          name="personal-info"
-          id="personal-info"
-          placeholder="Surname"
+          type="email"
+          name="buy-email"
+          id="buy-email"
+          placeholder="Enter your email"
         />
-      </div>
-    </label>
+      </label>
 
-    <label class="buy-email" for="buy-email">
-      <p class="modal-buy-subtitle">Email</p>
-      <input
-        class="modal-buy-input modal-buy-inputs"
-        type="email"
-        name="buy-email"
-        id="buy-email"
-        placeholder="Enter your email"
-      />
-    </label>
+      <label class="buy-phone" for="buy-phone">
+        <p class="modal-buy-subtitle">Phone number</p>
+        <svg class="buy-flag">
+          <use href="../img/icons.svg#flag"></use>
+        </svg>
+        <div class="modal-buy-phone">
+          <input
+            class="modal-buy-input modal-buy-inputs"
+            type="number"
+            name="buy-phone"
+            id="buy-phone"
+            placeholder="Phone number"
+          />
+        </div>
+      </label>
 
-    <label class="buy-phone" for="buy-phone">
-      <p class="modal-buy-subtitle">Phone number</p>
-      <svg class="buy-flag">
-        <use href="../img/icons.svg#flag"></use>
-      </svg>
-      <div class="modal-buy-phone">
+      <label class="buy-card" for="buy-phone">
+        <p class="modal-buy-subtitle">Card number</p>
         <input
-          class="modal-buy-input modal-buy-inputs"
+          class="modal-buy-input modal-buy-inputs buy-card-input"
           type="number"
-          name="buy-phone"
-          id="buy-phone"
-          placeholder="Phone number"
+          name="buy-card"
+          id="buy-card"
+          placeholder="Enter card"
         />
-      </div>
-    </label>
+        <svg class="buy-mastercard">
+          <use href="../img/icons.svg#mastercard"></use>
+        </svg>
+      </label>
 
-    <label class="buy-card" for="buy-phone">
-      <p class="modal-buy-subtitle">Card number</p>
-      <input
-        class="modal-buy-input modal-buy-inputs buy-card-input"
-        type="number"
-        name="buy-card"
-        id="buy-card"
-        placeholder="Enter card"
-      />
-      <svg class="buy-mastercard">
-        <use href="../img/icons.svg#mastercard"></use>
-      </svg>
-    </label>
+      <label class="buy-feedback" for="buy-feedback">
+        <p class="modal-buy-subtitle">Comment</p>
+        <textarea
+          class="modal-buy-input modal-buy-inputs"
+          name="buy-feedback"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
 
-    <label class="buy-feedback" for="buy-feedback">
-      <p class="modal-buy-subtitle">Comment</p>
-      <textarea
-        class="modal-buy-input modal-buy-inputs"
-        name="buy-feedback"
-        placeholder="Enter text"
-      ></textarea>
-    </label>
-
-    <button class="modal-buy-btn" type="submit">Submit</button>
+      <button class="modal-buy-btn" type="submit">Submit</button>
+    </form>
   </div>
 </div>
 
