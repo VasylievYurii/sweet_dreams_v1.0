@@ -47,17 +47,17 @@
 (() => {
   const refs = {
     selectors: [
-      {
-        isOneStep: false,
-        openBtn: '.top-sellers-button',
-        closeBtn: '.js-reviewClose',
-        submitBtn: '.js-reviewSubmit',
-        closePopupBtn: '.js-reviewPopupClose',
-        modalRootClass: '.modal-review',
-        modalHideClass: 'modal-review--hidden',
-        popupRootClass: '.popup-review',
-        popupHideClass: 'popup-review--hidden',
-      },
+      // {
+      //   isOneStep: false,
+      //   openBtn: '.reviews-btn',
+      //   closeBtn: '.js-reviewClose',
+      //   submitBtn: '.js-reviewSubmit',
+      //   closePopupBtn: '.js-reviewPopupClose',
+      //   modalRootClass: '.modal-review',
+      //   modalHideClass: 'modal-review--hidden',
+      //   popupRootClass: '.popup-review',
+      //   popupHideClass: 'popup-review--hidden',
+      // },
       {
         isOneStep: true,
         openBtn: '.subscribe-btn',
@@ -69,6 +69,18 @@
         popupRootClass: '.js--mockup',
         popupHideClass: 'js--mockup',
       },
+{
+        isOneStep: false,
+        openBtn: '.js-buy-open-btn',
+        closeBtn: '.js-buy-close-modal',
+        submitBtn: '.js-buy-review-submit',
+        closePopupBtn: '.js-buy-close-popup',
+        modalRootClass: '.modal-buy',
+        modalHideClass: 'modal-buy-hidden',
+        popupRootClass: '.popup-buy',
+        popupHideClass: 'popup-buy-hidden',
+      },
+
     ],
     backdrop: document.querySelector('.modal-review__backdrop'),
     bodyNoScroll: document.querySelector('body'),

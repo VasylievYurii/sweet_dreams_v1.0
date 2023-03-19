@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="modal-buy-now">
+  <div class="modal-buy-now modal-buy modal-buy-hidden">
 
-    <button type="button" class="buy-close-wrapper js-reviewClose" aria-label="modal close">
+    <button type="button" class="buy-close-wrapper js-buy-close-modal" aria-label="modal close">
     <svg class="buy-close">
       <use href="../img/icons.svg#close"></use>
     </svg>
@@ -11,7 +11,7 @@
       <span class="buy-title-accent">bUY</span> nOW
     </h2>
 
-    <div class="swiper">
+    <div class="swiper-buy">
       <ul class="buy-choco-list swiper-wrapper">
         <li class="buy-choco-item swiper-slide">
           <div class="buy-choco-content">
@@ -52,7 +52,7 @@
                         <p class="buy-description">300 g</p>
         </li>
       </ul>
-      <div class="swiper-pagination swiper-pagination-buy"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <form class="modal-form-buy" name="modal-buy-now" autocomplete="on">
@@ -66,8 +66,7 @@
               name="personal-info"
               id="personal-info"
               placeholder="Name"
-              required
-              pattern="^[a-zA-Zа-яА-Я]+"
+                            pattern="^[a-zA-Zа-яА-Я]+"
               minlength="2"
             />
             <input
@@ -76,8 +75,7 @@
               name="personal-info"
               id="personal-info"
               placeholder="Surname"
-              required
-              pattern="^[a-zA-Zа-яА-Я]+"
+                            pattern="^[a-zA-Zа-яА-Я]+"
               minlength="2"
             />
           </span>
@@ -93,8 +91,7 @@
             name="buy-email"
             id="buy-email"
             placeholder="Enter your email"
-            required
-          />
+                    />
         </label>
       </div>
 
@@ -113,8 +110,7 @@
               name="buy-phone"
               id="buy-phone"
               placeholder="Phone number"
-              required
-               pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" 
                title="xxx-xx-xx"
             />
           </span>
@@ -132,8 +128,7 @@
               name="buy-card"
               id="buy-card"
               placeholder="Enter card"
-              required
-              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
               title="xxxx-xxxx-xxxx-xxxx"
             />
             <svg class="buy-mastercard">
@@ -154,14 +149,16 @@
         </label>
       </div>
 
-      <button class="modal-buy-btn" type="submit">Submit</button>
+      <button class="modal-buy-btn js-buy-review-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
 
+
+
 <div class="container">
-  <div class="modal-buy-thanks">
-    <button type="button" class="modal-icon-wrapper js-reviewClose">
+  <div class="modal-buy-thanks popup-buy popup-buy-hidden">
+    <button type="button" class="modal-icon-wrapper js-buy-close-popup">
       <svg class="thanks-close">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
