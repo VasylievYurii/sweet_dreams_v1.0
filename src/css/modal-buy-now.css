@@ -8,8 +8,21 @@
   border-radius: 15px;
   overflow: auto;
 
+  z-index: 50;
+
   background-color: var(--color-white);
   /* outline: 1px solid tomato; */
+}
+
+.modal-buy,
+.popup-buy {
+  opacity: 1;
+}
+
+.modal-buy-hidden,
+.popup-buy--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .buy-close-wrapper {
@@ -357,7 +370,11 @@
 /*THANK YOU*/
 
 .modal-buy-thanks {
-  position: relative;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
   margin-left: auto;
   margin-right: auto;
 
