@@ -5,8 +5,10 @@
 
   padding: 32px 24px;
   border-radius: 15px;
+  overflow: auto;
 
-  outline: 1px solid tomato;
+  background-color: var(--color-white);
+  /* outline: 1px solid tomato; */
 }
 
 .buy-close {
