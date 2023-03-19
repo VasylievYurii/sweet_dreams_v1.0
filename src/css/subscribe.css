@@ -55,7 +55,7 @@
 /* Form */
 
 .subscribe-form{
-    display: none;
+    /* display: none; */
     position: absolute;
     transform: translateX(-50%);
     transform: translateY(-50%);
@@ -67,6 +67,12 @@
     border-radius: 15px;
     background-color: var(--color-white-default);
     overflow: hidden;
+    opacity: 1;
+}
+
+.subscribe-form-hidden{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .subscribe-form-close{
