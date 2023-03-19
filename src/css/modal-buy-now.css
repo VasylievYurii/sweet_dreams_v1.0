@@ -1,4 +1,5 @@
 .modal-buy-now {
+  /* display: none; */
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -11,14 +12,42 @@
   /* outline: 1px solid tomato; */
 }
 
-.buy-close {
+.buy-close-wrapper {
   position: absolute;
   top: 20px;
   right: 20px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 34px;
+  height: 34px; */
+  stroke: currentColor;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-white);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.buy-close {
   width: 24px;
   height: 24px;
 
   stroke: var(--color-black);
+
+  transition: stroke 250ms var(--timing-function);
+}
+
+.buy-close-wrapper:is(:hover, :focus) {
+  background-color: var(--color-light-orange);
+  outline: none;
+}
+
+.buy-close-wrapper:is(:hover, :focus) .buy-close {
+  stroke: var(--color-orange);
 }
 
 .modal-buy-title {
@@ -34,10 +63,6 @@
 
 .buy-title-accent {
   color: var(--color-orange);
-}
-
-.buy-choco-list {
-  margin-bottom: 32px;
 }
 
 .buy-choco-item {
@@ -158,6 +183,14 @@
 
   width: 32px;
   height: 21px;
+}
+
+.modal-form-buy {
+  margin-top: 32px;
+}
+
+.swiper-pagination-buy {
+  margin-top: 14px;
 }
 
 .buy-card-input {
