@@ -20,7 +20,7 @@
     />
   
   <script type="module" crossorigin src="/vanilla-app-template/assets/index-253e1958.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-dda0f388.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-17e5d60c.css">
 </head>
 
 <body>
@@ -477,57 +477,62 @@
   <div class="modal-review__backdrop  modal-review__backdrop--hidden">
   <div class="container">
   <div class="modal-buy-now">
+
+    <button type="button" class="buy-close-wrapper js-reviewClose" aria-label="modal close">
     <svg class="buy-close">
       <use href="../img/icons.svg#close"></use>
     </svg>
+    </button>
 
     <h2 class="modal-buy-title">
       <span class="buy-title-accent">bUY</span> nOW
     </h2>
 
-    <ul class="buy-choco-list">
-      <li class="buy-choco-item">
-        <div class="buy-choco-content">
-          <img
-            srcset="
-              ../img/buy-now/mobile-pieces.png    1x,
-              ../img/buy-now/mobile-pieces@2x.png 2x
-            "
-            src="../img/buy-now/mobile-pieces.png"
-            alt="chocolate piece"
-          />
-          <p class="buy-description">100 g</p>
-        </div>
-      </li>
-      <li class="buy-choco-item">
-        <div class="buy-choco-content">
-          <img
-            srcset="
-              ../img/buy-now/mobile-column.png    1x,
-              ../img/buy-now/mobile-column@2x.png 2x
-            "
-            src="../img/buy-now/mobile-column.png"
-            alt="chocolate mix"
-          />
-          <p class="buy-description">200 g</p>
-        </div>
-      </li>
-      <li class="buy-choco-item">
-        <div class="buy-choco-content">
-          <img
-            srcset="
-              ../img/buy-now/mobile-chocolate.png    1x,
-              ../img/buy-now/mobile-chocolate@2x.png 2x
-            "
-            src="../img/buy-now/mobile-chocolate.png"
-            alt="chocolate bar"
-          />
-          <p class="buy-description">300 g</p>
-        </div>
-      </li>
-    </ul>
+    <div class="swiper">
+      <ul class="buy-choco-list swiper-wrapper">
+        <li class="buy-choco-item swiper-slide">
+          <div class="buy-choco-content">
+                        <img
+                srcset="
+                  ../img/buy-now/mobile-pieces.png    1x,
+                  ../img/buy-now/mobile-pieces@2x.png 2x
+                "
+                src="../img/buy-now/mobile-pieces.png"
+                alt="chocolate piece"
+              />
+            <p class="buy-description">100 g</p>
+                    </div>
+        </li>
+        <li class="buy-choco-item swiper-slide">
+          <div class="buy-choco-content">
+                       <img
+              srcset="
+                ../img/buy-now/mobile-column.png    1x,
+                ../img/buy-now/mobile-column@2x.png 2x
+              "
+              src="../img/buy-now/mobile-column.png"
+              alt="chocolate mix"
+            />
+            <p class="buy-description">200 g</p>
+          </div>
+        </li>
+        <li class="buy-choco-item swiper-slide">
+          <div class="buy-choco-content">
+                       <img
+              srcset="
+                ../img/buy-now/mobile-chocolate.png    1x,
+                ../img/buy-now/mobile-chocolate@2x.png 2x
+              "
+              src="../img/buy-now/mobile-chocolate.png"
+              alt="chocolate bar"
+            />
+                        <p class="buy-description">300 g</p>
+        </li>
+      </ul>
+      <div class="swiper-pagination swiper-pagination-buy"></div>
+    </div>
 
-    <form name="modal-buy-now" autocomplete="on">
+    <form class="modal-form-buy" name="modal-buy-now" autocomplete="on">
       <div class="modal-buy-inputs">
         <label class="buy-personal" for="personal-info">
           <span class="modal-buy-subtitle">Personal information</span>
@@ -581,13 +586,13 @@
             <span class="country-code">+380</span>
             <input
               class="modal-buy-input modal-buy-phone"
-              type="number"
+              type="tel"
               name="buy-phone"
               id="buy-phone"
               placeholder="Phone number"
               required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
+               pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+               title="xxx-xx-xx"
             />
           </span>
         </label>
@@ -600,7 +605,7 @@
           <span class="modal-mastercard-wrapper">
             <input
               class="modal-buy-input buy-card-input"
-              type="number"
+              type="tel"
               name="buy-card"
               id="buy-card"
               placeholder="Enter card"
@@ -633,7 +638,7 @@
 
 <div class="container">
   <div class="modal-buy-thanks">
-    <button type="button" class="modal-icon-wrapper">
+    <button type="button" class="modal-icon-wrapper js-reviewClose">
       <svg class="thanks-close">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
