@@ -20,7 +20,7 @@
 }
 
 .modal-buy-hidden,
-.popup-buy--hidden {
+.popup-buy-hidden {
   opacity: 0;
   pointer-events: none;
 }
