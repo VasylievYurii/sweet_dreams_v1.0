@@ -49,7 +49,7 @@
     selectors: [
       {
         isOneStep: false,
-        openBtn: '.top-sellers-button',
+        openBtn: '.reviews-btn',
         closeBtn: '.js-reviewClose',
         submitBtn: '.js-reviewSubmit',
         closePopupBtn: '.js-reviewPopupClose',
@@ -69,6 +69,18 @@
         popupRootClass: '.js--mockup',
         popupHideClass: 'js--mockup',
       },
+      {
+        isOneStep: false,
+        openBtn: '.js-buy-open-btn',
+        closeBtn: '.js-buy-close-modal',
+        submitBtn: '.js-buy-review-submit',
+        closePopupBtn: '.js-buy-close-popup',
+        modalRootClass: '.modal-buy',
+        modalHideClass: 'modal-buy-hidden',
+        popupRootClass: '.popup-buy',
+        popupHideClass: 'popup-buy-hidden',
+      }
+
     ],
     backdrop: document.querySelector('.modal-review__backdrop'),
     bodyNoScroll: document.querySelector('body'),
@@ -118,11 +130,12 @@
   function toggleBackdrop() {
     refs.backdrop.classList.toggle('modal-review__backdrop--hidden');
     refs.bodyNoScroll.classList.toggle('page__body--no-scroll');
+    // console.log('toggle backdrop');
   }
 
   function toggleModal(rootClass, hideClass) {
-    console.log(rootClass);
-    console.log(hideClass);
+    // console.log(rootClass);
+    // console.log(hideClass);
     document.querySelector(rootClass).classList.toggle(hideClass);
     toggleBackdrop();
   }
@@ -134,7 +147,9 @@
     popupHideClass
   ) {
     document.querySelector(modalRootClass).classList.toggle(modalHideClass);
+    // console.log('hide modal---------------------');
     document.querySelector(popupRootClass).classList.toggle(popupHideClass);
+    // console.log('show popup++++++++++++++++++');
   }
 
   refs.init(refs.selectors);
