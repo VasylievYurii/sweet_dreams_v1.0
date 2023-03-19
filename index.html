@@ -19,8 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
   
-  <script type="module" crossorigin src="/vanilla-app-template/assets/index-648a93b3.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-1c8d65fd.css">
+  <script type="module" crossorigin src="/vanilla-app-template/assets/index-53e9e318.js"></script>
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-9617e6d3.css">
 </head>
 
 <body>
@@ -339,42 +339,106 @@
 У секції знаходиться перелік контентних зображень, який необхідно реалізувати як список елементів за допомогою <ul>.
 Кнопка “Buy now” відкриває модальне вікно “Buy now”. -->
 <section class="top-sellers">
-    <div class="top-sellers-container container">
-        <h2 class="top-sellers-title"><span class="top-sellers-title-color">tOp</span> Sellers</h2>
-        <ul class="top-sellers-list">
-            <li class="top-sellers-item">
-                <picture >
-                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-set.jpg 1x, ../img/top-sellers/desktop-top-sellers-set@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-set.jpg 1x, ../img/top-sellers/tablet-top-sellers-set@2x.jpg 2x">
-                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-set.jpg 1x, ../img/top-sellers/mobile-top-sellers-set@2x.jpg 2x">
-                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-set.jpg" alt="chocolate and nut">
-                </picture>
-                    <p class="top-sellers-text top-sellers-text-mobile">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao
-                has been around for
-                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-             </li>
-            <li class="top-sellers-item">
-                <picture class="top-sellers-img">
-                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid-nuts@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="../img/top-sellers/tablet-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/tablet-top-sellers-pyramid-nuts@2x.jpg 2x">
-                <source media="(max-width: 767px)" srcset="../img/top-sellers/mobile-top-sellers-pyramid-nuts.jpg 1x, ../img/top-sellers/mobile-top-sellers-pyramid-nuts@2x.jpg 2x">
-                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg" alt="chocolate">
-                </picture>
-            </li>
-            <li class="top-sellers-item">
-                <picture class="top-sellers-img">
-                <source media="(min-width: 1200px)" srcset="../img/top-sellers/desktop-top-sellers-pyramid.jpg 1x, ../img/top-sellers/desktop-top-sellers-pyramid@2x.jpg 2x">
-                <img class="top-sellers-img" src="../img/top-sellers/desktop-top-sellers-pyramid.jpg" alt="chocolate pyramid">
-                </picture>
-            </li>
-        </ul>
-        <div class="top-sellers-about">
-            <p class="top-sellers-text top-sellers-text-desktop">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
-        thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-            <button class="top-sellers-button" type="button">Buy now</button>
-        </div>
+  <div class="top-sellers-container container">
+    <h2 class="top-sellers-title">
+      <span class="top-sellers-title-color">tOp</span> Sellers
+    </h2>
+    <ul class="top-sellers-list">
+      <li class="top-sellers-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ../img/top-sellers/desktop-top-sellers-set.jpg    1x,
+              ../img/top-sellers/desktop-top-sellers-set@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/top-sellers/tablet-top-sellers-set.jpg    1x,
+              ../img/top-sellers/tablet-top-sellers-set@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/top-sellers/mobile-top-sellers-set.jpg    1x,
+              ../img/top-sellers/mobile-top-sellers-set@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src="../img/top-sellers/desktop-top-sellers-set.jpg"
+            alt="chocolate and nut"
+          />
+        </picture>
+        <p class="top-sellers-text top-sellers-text-mobile">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="top-sellers-item">
+        <picture class="top-sellers-img">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg    1x,
+              ../img/top-sellers/desktop-top-sellers-pyramid-nuts@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/top-sellers/tablet-top-sellers-pyramid-nuts.jpg    1x,
+              ../img/top-sellers/tablet-top-sellers-pyramid-nuts@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/top-sellers/mobile-top-sellers-pyramid-nuts.jpg    1x,
+              ../img/top-sellers/mobile-top-sellers-pyramid-nuts@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src="../img/top-sellers/desktop-top-sellers-pyramid-nuts.jpg"
+            alt="chocolate"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-item">
+        <picture class="top-sellers-img">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ../img/top-sellers/desktop-top-sellers-pyramid.jpg    1x,
+              ../img/top-sellers/desktop-top-sellers-pyramid@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src="../img/top-sellers/desktop-top-sellers-pyramid.jpg"
+            alt="chocolate pyramid"
+          />
+        </picture>
+      </li>
+    </ul>
+    <div class="top-sellers-about">
+      <p class="top-sellers-text top-sellers-text-desktop">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button class="top-sellers-button js-buy-open-btn" type="button">
+        Buy now
+      </button>
     </div>
+  </div>
 </section>
+
     <!-- Sergey Mushtukov -->
     <!-- <br>Reviews<br>
 Текст “CHOCOLATE IS LOVED” є заголовком секції.
@@ -514,15 +578,18 @@
 Текст “EXPLORE OUR NEW CHOCOLATE FIRST” є заголовком секції.
 Кнопка “Subscribe” відкриває модальне вікно “Explore our new chocolate first”. -->
 <section class="subscribe">
-    <div class="container subscribe-wrap">
-        <h1 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h1>
-        <p class="subscribe-parag">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
-            craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
-            that is sure to please.
-        </p>
-        <button class="subscribe-btn">Subscribe</button>
-    </div>
+  <div class="container subscribe-wrap">
+    <h1 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h1>
+    <p class="subscribe-parag">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button class="subscribe-btn">Subscribe</button>
+  </div>
 </section>
+
   </main>
 
   <!-- Fedir Kandaurov -->
@@ -606,9 +673,9 @@
 
   <div class="modal-review__backdrop  modal-review__backdrop--hidden">
   <div class="container">
-  <div class="modal-buy-now">
+  <div class="modal-buy-now modal-buy modal-buy-hidden">
 
-    <button type="button" class="buy-close-wrapper js-reviewClose" aria-label="modal close">
+    <button type="button" class="buy-close-wrapper js-buy-close-modal" aria-label="modal close">
     <svg class="buy-close">
       <use href="../img/icons.svg#close"></use>
     </svg>
@@ -618,7 +685,7 @@
       <span class="buy-title-accent">bUY</span> nOW
     </h2>
 
-    <div class="swiper">
+    <div class="swiper-buy">
       <ul class="buy-choco-list swiper-wrapper">
         <li class="buy-choco-item swiper-slide">
           <div class="buy-choco-content">
@@ -659,7 +726,7 @@
                         <p class="buy-description">300 g</p>
         </li>
       </ul>
-      <div class="swiper-pagination swiper-pagination-buy"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <form class="modal-form-buy" name="modal-buy-now" autocomplete="on">
@@ -673,8 +740,7 @@
               name="personal-info"
               id="personal-info"
               placeholder="Name"
-              required
-              pattern="^[a-zA-Zа-яА-Я]+"
+                            pattern="^[a-zA-Zа-яА-Я]+"
               minlength="2"
             />
             <input
@@ -683,8 +749,7 @@
               name="personal-info"
               id="personal-info"
               placeholder="Surname"
-              required
-              pattern="^[a-zA-Zа-яА-Я]+"
+                            pattern="^[a-zA-Zа-яА-Я]+"
               minlength="2"
             />
           </span>
@@ -700,8 +765,7 @@
             name="buy-email"
             id="buy-email"
             placeholder="Enter your email"
-            required
-          />
+                    />
         </label>
       </div>
 
@@ -720,8 +784,7 @@
               name="buy-phone"
               id="buy-phone"
               placeholder="Phone number"
-              required
-               pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" 
                title="xxx-xx-xx"
             />
           </span>
@@ -739,8 +802,7 @@
               name="buy-card"
               id="buy-card"
               placeholder="Enter card"
-              required
-              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
               title="xxxx-xxxx-xxxx-xxxx"
             />
             <svg class="buy-mastercard">
@@ -761,14 +823,16 @@
         </label>
       </div>
 
-      <button class="modal-buy-btn" type="submit">Submit</button>
+      <button class="modal-buy-btn js-buy-review-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
 
+
+
 <div class="container">
-  <div class="modal-buy-thanks">
-    <button type="button" class="modal-icon-wrapper js-reviewClose">
+  <div class="modal-buy-thanks popup-buy popup-buy-hidden">
+    <button type="button" class="modal-icon-wrapper js-buy-close-popup">
       <svg class="thanks-close">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
@@ -828,14 +892,15 @@
         pattern="^[1-9][0-9](-)?[0-9]{3}(-)?[0-9]{2}(-)?[0-9]{2}$"
         required
       />
-      <span class="review-form__label review-form__label--phone">Phone number</span>
+      <span class="review-form__label review-form__label--phone"
+        >Phone number</span
+      >
       <span class="review-form__area-phone">
         <svg class="modal-review__icon-phone">
           <use href="../img/icons.svg#flag"></use>
         </svg>
         +380
       </span>
-      
     </label>
     <label class="review-form__field">
       <textarea
@@ -849,7 +914,7 @@
       >
     </label>
     <button
-      class="review-form__button-submit js-reviewSubmit"
+      class="review-form__button-submit js-buy-close-popup"
       name="review-form-submit"
       type="submit"
     >
