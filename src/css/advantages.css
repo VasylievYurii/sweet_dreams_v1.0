@@ -1,19 +1,12 @@
-
 .advantages {
   background: var(--color-dark-purple);
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
+
 .advantages-title {
   color: var(--color-white-default);
   display: none;
-}
-.advantages-wrap {
-}
-
-.advantages-list {
-   
 }
 
 .advantages-item {
@@ -23,7 +16,8 @@
 .advantages-icon {
   fill: var(--color-orange);
 }
-.advantages-link {
+
+.advantages-icon-border {
   display: flex;
   content: '';
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -32,7 +26,7 @@
   height: 65px;
   justify-content: center;
   align-items: center;
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 .advantages-subtitle {
@@ -42,7 +36,6 @@
   color: var(--color-white-default);
   margin-bottom: 18px;
   margin-top: 22px;
-  
 }
 
 .advantages-text {
@@ -50,40 +43,38 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--color-white-translucent);
-  
 }
 
 @media screen and (min-width: 768px) {
-.advantages {
+  .advantages {
     padding-top: 50px;
     padding-bottom: 50px;
-  
   }
-.advantages-list {
+  .advantages-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 32px;
-  
-}
-.advantages-link {
-  margin-top: 0;
-
-}
+  }
+  .advantages-link {
+    margin-top: 0;
+  }
+  .advantages-icon-border {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 50px;
     padding-bottom: 50px;
-  
   }
 
   .advantages-list {
     justify-content: space-between;
   }
 
-  .advantages.container{
+  .advantages.container {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -92,20 +83,20 @@
     position: relative;
     max-width: 326px;
     padding-right: 18px;
-    }
+  }
 
-.advantages-item::after {
-  content: "";
-  width: 124px;
-  height: 0px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: rotate(90deg);
-  right: calc(-62px + (100% - 326px)/2);
-  top: 50%;
-  position: absolute;
-}
+  .advantages-item::after {
+    content: '';
+    width: 124px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+    right: calc(-62px + (100% - 326px) / 2);
+    top: 50%;
+    position: absolute;
+  }
 
-.advantages-list .advantages-item:last-child::after {
-  display: none;
-}
+  .advantages-list .advantages-item:last-child::after {
+    display: none;
+  }
 }
