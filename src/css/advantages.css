@@ -78,11 +78,15 @@
     padding-bottom: 50px;
   
   }
+
   .advantages-list {
     gap: 70px;
-  
-  
-}
+  }
+
+  .advantages-item {
+    position: relative;
+  }
+
 .advantages-item::after {
   content: "";
   width: 124px;
@@ -93,11 +97,8 @@
   top: 50%;
   position: absolute;
 }
-.advantages-item {
-  position: relative;
-}
 
-.adventeges-item:last-child + .adventeges-item::after {
+.advantages-list .advantages-item:last-child::after {
   display: none;
 }
 }
