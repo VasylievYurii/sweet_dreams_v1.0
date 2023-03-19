@@ -19,8 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
   
-  <script type="module" crossorigin src="/vanilla-app-template/assets/index-9f61f0d2.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-5d7b12eb.css">
+  <script type="module" crossorigin src="/vanilla-app-template/assets/index-3c8ec56c.js"></script>
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-9ebf7411.css">
 </head>
 
 <body>
@@ -735,8 +735,8 @@
 
 
   <div class="modal-review__backdrop  modal-review__backdrop--hidden">
-  <div class="container">
-  <div class="modal-buy-now modal-buy modal-buy-hidden">
+  <div class="container modal-buy modal-buy-hidden">
+  <div class="modal-buy-now">
 
     <button type="button" class="buy-close-wrapper js-buy-close-modal" aria-label="modal close">
     <svg class="buy-close">
@@ -792,7 +792,7 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <form class="modal-form-buy" name="modal-buy-now" autocomplete="on">
+    <form action="" class="modal-form-buy" name="modal-buy-now" autocomplete="on">
       <div class="modal-buy-inputs">
         <label class="buy-personal" for="personal-info">
           <span class="modal-buy-subtitle">Personal information</span>
@@ -893,8 +893,8 @@
 
 
 
-<div class="container">
-  <div class="modal-buy-thanks popup-buy popup-buy-hidden">
+<div class="container popup-buy popup-buy-hidden">
+  <div class="modal-buy-thanks">
     <button type="button" class="modal-icon-wrapper js-buy-close-popup">
       <svg class="thanks-close">
         <use href="../img/icons.svg#close-modal"></use>
@@ -977,7 +977,7 @@
       >
     </label>
     <button
-      class="review-form__button-submit js-buy-close-popup"
+      class="review-form__button-submit js-reviewSubmit"
       name="review-form-submit"
       type="submit"
     >
@@ -1006,7 +1006,7 @@
   
   <form class="subscribe-form subscribe-form-hidden">
     <img class="subscribe-form-img" srcset="../img/subscribe/mobile-modal-subscribe.jpg 300w, ../img/subscribe/desktop-tablet-modal-subscribe.jpg 768w" alt="chocolate">
-    <button class="subscribe-form-close">X
+    <button class="subscribe-form-close" type="button">X
         <!-- <svg class="subscribe-form-close-svg" width="24px" height="24px">
             <use href="../img/icons.svg#close"></use>
         </svg> -->
