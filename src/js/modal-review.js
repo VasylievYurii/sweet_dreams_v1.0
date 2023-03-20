@@ -49,7 +49,7 @@
     selectors: [
       {
         isOneStep: false,
-        openBtn: '.reviews-btn',
+        openBtn: ['.reviews-btn'],
         closeBtn: '.js-reviewClose',
         submitBtn: '.js-reviewSubmit',
         closePopupBtn: '.js-reviewPopupClose',
@@ -60,7 +60,7 @@
       },
       {
         isOneStep: true,
-        openBtn: '.subscribe-btn',
+        openBtn: ['.subscribe-btn'],
         closeBtn: '.subscribe-form-close',
         submitBtn: '.subscribe-form-submit',
         closePopupBtn: '.js--mockup',
@@ -71,7 +71,7 @@
       },
       {
         isOneStep: false,
-        openBtn: '.js-buy-open-btn',
+        openBtn: ['.js-buy-open-btn', '.js-buy-open-btn1'],
         closeBtn: '.js-buy-close-modal',
         submitBtn: '.js-buy-review-submit',
         closePopupBtn: '.js-buy-close-popup',
@@ -87,11 +87,14 @@
 
     init: function (selectors) {
       for (let paramSet of selectors) {
+        for (let openButton of paramSet.openBtn) {
+        // console.dir(openButton);
         document
-          .querySelector(paramSet.openBtn)
+          .querySelector(openButton)
           .addEventListener('click', () =>
             toggleModal(paramSet.modalRootClass, paramSet.modalHideClass)
           );
+        }
 
         document
           .querySelector(paramSet.closeBtn)
@@ -135,8 +138,18 @@
 
   function toggleModal(rootClass, hideClass) {
     // console.log(rootClass);
+    // setTimeout(5000);
     // console.log(hideClass);
-    document.querySelector(rootClass).classList.toggle(hideClass);
+    // console.log(document.querySelector(rootClass).classList.contains('visually-hidden'));
+    if (document.querySelector(rootClass).classList.contains('visually-hidden')){
+      document.querySelector(rootClass).classList.toggle('visually-hidden');
+      document.querySelector(rootClass).classList.toggle(hideClass);
+    } else {
+      document.querySelector(rootClass).classList.toggle(hideClass);
+      setTimeout(()=>
+      document.querySelector(rootClass).classList.toggle('visually-hidden'), 250);
+    }
+
     toggleBackdrop();
   }
 
@@ -147,7 +160,10 @@
     popupHideClass
   ) {
     document.querySelector(modalRootClass).classList.toggle(modalHideClass);
+    setTimeout(()=>
+    document.querySelector(modalRootClass).classList.toggle('visually-hidden'), 250);
     // console.log('hide modal---------------------');
+    document.querySelector(popupRootClass).classList.toggle('visually-hidden');
     document.querySelector(popupRootClass).classList.toggle(popupHideClass);
     // console.log('show popup++++++++++++++++++');
   }
