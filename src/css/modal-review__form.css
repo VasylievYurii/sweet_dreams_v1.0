@@ -186,7 +186,7 @@
   padding-right: 8px;
 
   color: #000000;
-  border-right: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-right: 1.5px solid var(--color-black-transparent);
 
   font-size: 14px;
   font-weight: 500;
