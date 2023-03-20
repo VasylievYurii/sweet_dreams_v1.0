@@ -28,6 +28,8 @@
 }
 
 .subscribe-parag {
+  width:100%;
+  max-width: 326px;
   margin: 0 auto 24px auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -84,6 +86,16 @@
 .subscribe-form-hidden {
   opacity: 0;
   pointer-events: none;
+
+  white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .subscribe-form-close {
@@ -213,9 +225,7 @@
     width: 291px;
   }
 
-  .subscribe-parag {
-    width: 326px;
-  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -239,11 +249,11 @@
   }
 
   .subscribe-parag {
-    width: 467px;
+    max-width: 467px;
   }
 
   .subscribe-btn {
-    width: 172px;
+    min-width: 172px;
     height: 50px;
     font-size: 18px;
     line-height: 1.22;

@@ -1,19 +1,22 @@
+.backdrop-buy-now{
+  position: relative;
+  width: 100%;
+  height: 100%;
+   overflow: auto;
+}
+
 .modal-buy-now {
-  /* display: none; */
-  
-  /* position: relative;
-  margin-left: auto;
-  margin-right: auto; */
- width: 311px;
+  width: 311px;
+  height: auto;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
 
   padding: 32px 24px;
   border-radius: 15px;
-  overflow: auto;
+  /* overflow: auto; */
 
   z-index: 50;
 
@@ -22,6 +25,22 @@
   transition: transform 250ms var(--timing-function),
     opacity 250ms var(--timing-function);
   /* outline: 1px solid tomato; */
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Ширина прокрутки */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-orange); /* Колір фону прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-placeholder); /* Колір прокрутки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange); /* Колір прокрутки при наведенні */
 }
 
 .modal-buy,
@@ -34,6 +53,16 @@
   transform: translate(-50%, -50%) scale(1.2);
   opacity: 0;
   pointer-events: none;
+
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .buy-close-wrapper {
@@ -141,6 +170,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .modal-buy-input::placeholder {
@@ -148,6 +178,11 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-placeholder);
+}
+
+.modal-buy-input:focus {
+  border-color: var(--color-orange);
+  outline: none;
 }
 
 .modal-buy-personal {
@@ -260,7 +295,7 @@
   outline: none;
 }
 
-.swiper3{
+.swiper3 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -274,8 +309,8 @@
   margin-top: 20px;
   /* position: absolute; */
   text-align: center;
-  transition: .3s opacity;
-  transform: translate3d(0,0,0);
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
 }
 
 /* li .buy-choco-item.swiper-slide{
@@ -285,7 +320,6 @@
 /*MOBILE*/
 
 @media screen and (max-width: 767px) {
-
 }
 
 /*TABLET*/
@@ -298,7 +332,9 @@
 
     border-radius: 15px;
   }
-/* .buy-choco-item{
+
+  /* .buy-choco-item{
+
   width: 160px;
 } */
   .buy-choco-list {
@@ -429,7 +465,7 @@
   background-size: 276px;
 
   transition: transform 250ms var(--timing-function),
-        opacity 250ms var(--timing-function);
+    opacity 250ms var(--timing-function);
 }
 
 @media (min-device-pixel-ratio: 2),
