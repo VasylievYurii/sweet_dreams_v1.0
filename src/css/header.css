@@ -58,7 +58,13 @@
   height: 28px;
   width: 28px;
   stroke: rgba(17, 17, 17, 1);
+  transition: stroke 250ms var(--timing-function);
 }
+.menu-open-icon:hover,
+.menu-open-icon:focus{
+  stroke: var(--color-orange);
+}
+
 .header-nav {
   display: none;
 }
@@ -94,6 +100,7 @@
 }
 .menu-close-icon {
   stroke: rgba(255, 255, 255, 1);
+  transition: stroke 250ms var(--timing-function);
 }
 .menu-close-icon:focus,
 .menu-close-icon:hover {
@@ -102,12 +109,16 @@
 .nav-mob {
 }
 .header-nav-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   width: 100%;
   padding-left: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 .header-link-mob {
+      position: relative;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -116,11 +127,12 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color:var(--color-white-default);
+  transition: color 250ms var(--timing-function);
 }
-.header-link-mob:not(:last-child) {
+/* .header-link-mob:not(:last-child) {
   padding-bottom: 24px;
-}
+} */
 .mob-address {
   display: block;
   margin-top: auto;
@@ -134,6 +146,7 @@
 .mob-soc-item {
   fill: none;
   stroke: rgba(255, 255, 255, 1);
+  transition: stroke 250ms var(--timing-function);
 }
 .mob-soc-item:focus,
 .mob-soc-item:hover {
@@ -156,6 +169,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.header-link-mob:hover,
+.header-link-mob:focus{
+  color:var(--color-orange);
+}
+.header-link-mob::after{
+  content: "";
+  position: absolute;
+  display: block;
+  left:0;
+  bottom: -50%;
+  width: 24px;
+  height: 1px;
+  opacity: 0;
+  background-color:var(--color-orange);
+  transition: opacity 250ms var(--timing-function);
+}
+
+.header-link-mob:hover::after,
+.header-link-mob:focus::after{
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -228,14 +262,19 @@ width: 290px;
     align-items: center;
     gap: 21px;
   }
-  .header-soc-link {
+
+  .header-icon{
+    width: 24px;
+    height: 24px;
   }
+
   .header-soc-item {
     fill: none;
     stroke: rgba(17, 17, 17, 1);
+    transition: stroke 250ms var(--timing-function);
   }
-  .header-soc-link :focus,
-  .header-soc-link :hover {
+  .header-soc-item:focus,
+  .header-soc-item:hover {
     stroke: rgba(253, 146, 34, 1);
   }
  .header-soc-icon{
