@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   margin-top: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 19px;
 }
 .container {
 }
@@ -193,6 +193,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header{
+    margin-bottom: 31px;
+  }
 .mob-soc-icon {
   width: 24px;
   height: 24px;
@@ -209,6 +212,9 @@ width: 290px;
 }
 }
 @media screen and (min-width: 1200px) {
+  .header{
+    margin-bottom: 36px;
+  }
   .mob-menu {
     display: none;
   }
