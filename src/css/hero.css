@@ -110,9 +110,13 @@
   margin-top: 32px;
   padding-bottom: 21px;
 }
+
 .hero-scroll-icon {
+  width: 16px;
+  height: 16px;
   fill: currentColor;
 }
+
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-bottom: 50px;
@@ -197,5 +201,9 @@
     .hero {
       background-image: url(../img/hero/desktop-background-hero@2x.jpg);
     }
+  }
+  .hero-scroll-icon{
+    width: 22px;
+    height: 22px;
   }
 }
