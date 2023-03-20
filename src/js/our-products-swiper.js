@@ -40,3 +40,21 @@ const swiper2 = new Swiper('.swiper2', {
     el: '.swiper-pagination2',
   },
 });
+
+const swiper3 = new Swiper('.swiper3', {
+  spaceBetween: 16,
+  slidesPerView: 1,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination3',
+  },
+});
