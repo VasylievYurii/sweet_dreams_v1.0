@@ -1,68 +1,72 @@
-.backdrop-buy-now{
+/* .backdrop-buy-now{
   position: relative;
   width: 100%;
   height: 100%;
    overflow: auto;
-}
+} */
 
 .modal-buy-now {
-  width: 311px;
-  height: auto;
+
   position: absolute;
-  top: 80%;
+  top: 5%;
   left: 50%;
 
-  transform: translate(-50%, -50%) scale(1);
+  width: 311px;
+
+  transform: translateX(-50%) scale(1);
 
   padding: 32px 24px;
   border-radius: 15px;
   /* overflow: auto; */
 
-  z-index: 50;
+  /* z-index: 50; */
 
   background-color: var(--color-white);
 
   transition: transform 250ms var(--timing-function),
     opacity 250ms var(--timing-function);
+
+
   /* outline: 1px solid tomato; */
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* Ширина прокрутки */
+  width: 10px;
+  /* Ширина прокрутки */
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-light-orange); /* Колір фону прокрутки */
+  background: var(--color-light-orange);
+  /* Колір фону прокрутки */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-placeholder); /* Колір прокрутки */
+  background: var(--color-placeholder);
+  /* Колір прокрутки */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-orange); /* Колір прокрутки при наведенні */
+  background: var(--color-orange);
+  /* Колір прокрутки при наведенні */
 }
 
 .modal-buy,
 .popup-buy {
   opacity: 1;
+
 }
 
-.modal-buy-hidden,
+
+.modal-buy-hidden {
+  transform: translateX(-50%) scale(1.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
 .popup-buy-hidden {
   transform: translate(-50%, -50%) scale(1.2);
   opacity: 0;
   pointer-events: none;
-
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
 
 .buy-close-wrapper {
@@ -305,6 +309,7 @@
   z-index: 1;
   display: block;
 }
+
 .swiper-pagination3 {
   margin-top: 20px;
   /* position: absolute; */
@@ -319,13 +324,12 @@
 } */
 /*MOBILE*/
 
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
 
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .modal-buy-now {
-    position: relative;
+    /* position: relative; */
 
     width: 609px;
     padding: 48px;
@@ -443,8 +447,6 @@
 
 .modal-buy-thanks {
   position: absolute;
-  /* top: 50vh;
-  left: 50vw; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -469,9 +471,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .modal-buy-thanks {
     background-image: url('../img/mobile-chocolate-modal@2x.png');
     background-size: 276px;
@@ -551,9 +553,9 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .modal-buy-thanks {
       background-image: url('../img/desktop-tablet-chocolate-modal@2x.png');
       background-size: 276px;
