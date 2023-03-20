@@ -263,10 +263,15 @@ width: 290px;
     letter-spacing: -0.02em;
     color: #111111;
     gap: 24px;
+    transition: color 250ms var(--timing-function);
   }
   .header-link:not(:last-child) {
     padding-right: 24px;
   }
+  .header-link:hover, .header-link:focus{
+    color:var(--color-orange);
+  }
+
   .header-address {
     display: flex;
     margin-left: auto;
