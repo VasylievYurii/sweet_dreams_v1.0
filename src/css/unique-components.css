@@ -1,0 +1,164 @@
+:root {
+    --color-black: #111111;
+    --color-black-translucent: rgba(17, 17, 17, 0.7);
+    --color-black-transparent: rgba(17, 17, 17, 0.1);
+    --color-dark-purple: #1E1823;
+    --color-orange: #FD9222;
+    --color-light-orange: #FCF1E0;
+    --color-white-default: #ffffff;
+    --color-white: #FAFAFA;
+    --color-white-translucent: rgba(255, 255, 255, 0.7);
+    --color-point-list: #4C4C4C;
+    --color-point-list-border: #ECEDED;
+    --color-placeholder: rgba(64, 64, 64, 0.3);
+    --color-gradient: linear-gradient(180deg, #F16529, #D44528);
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.caja{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+}
+
+.unique-h2{
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 24px;
+
+}
+.unique-taste{
+    color: var(--color-orange);
+}
+
+.unique-text{
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.unique-chocolad{
+
+    background-color:var(--color-orange) ;
+    color: var(--color-white-default); 
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 270px; 
+    transition: transform 250ms;
+    cursor: pointer;
+    transform-style: preserve-3d;
+
+}
+
+.unique-milk{
+    background-color: var(--color-white-default);
+    color: var(--color-black);
+    border-radius: 15px;
+    position: absolute;
+}
+
+.card{
+    width: 100%;
+    height: 270px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;  
+}
+
+.unique-li{
+    max-width: 335px;
+    margin-bottom: 20px;
+
+}
+.unique-li:hover .card{
+    transform: rotateY(180deg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    
+}
+.unique-card{
+    position: absolute;
+     width: 100%;
+     margin-bottom: 20px;
+     backface-visibility: hidden;
+}
+
+
+.inique-nombre{
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.unique-anime{
+    background-color: var(--color-white-default);
+    border-radius: 15px;
+    padding: 28px;
+    transform: rotateY(180deg);
+    
+}
+
+.unique-anime-text{ 
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+.button{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+.unique-nobutton{
+    background-color: var(--color-orange);
+    color: var(--color-white-default);
+    border-radius: 35px;
+    margin-right: 6px;
+    text-align: center; 
+    padding:6px 16px;
+    font-weight: 400;
+    font-size: 10px;
+
+}
+.unique-nobutton2{
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-orange);
+    border-radius: 35px;
+    padding: 6px 16px;
+    font-weight: 400;
+    font-size: 10px;
+}
+.milkchok{
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    border: 1px solid var(--color-orange);
+    height: 100%;
+    border-radius: 15px;
+
+}
+.milk{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100%;
+    border-radius: 15px;
+}
+.nuts{
+    background-color: var(--color-dark-purple);
+    color: var(--color-white);
+    height: 100%;
+    border-radius: 15px;
+}
+.cacao{
+    border: 1px solid var(--color-orange);
+    border-radius:15px;
+    height: 100%;
+}
