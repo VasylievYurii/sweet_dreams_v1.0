@@ -8,7 +8,7 @@
 
   font-weight: 600;
   font-size: 20px;
-  line-height: calc(24 / 20);
+  line-height: 1.2;
 
   text-align: center;
   letter-spacing: -0.03em;
@@ -53,12 +53,12 @@
 
   font-weight: 600;
   font-size: 18px;
-  line-height: calc(24 / 18);
+  line-height: 1.33;
 }
 
 .reviews-item-text {
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: 1.29;
   letter-spacing: -0.02em;
 
   color: rgba(17, 17, 17, 0.7);
@@ -74,7 +74,7 @@
 
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(17 / 14);
+  line-height: 1.21;
 
   border: 1px solid var(--color-orange);
   border-radius: 100px;
@@ -119,7 +119,7 @@
     margin-bottom: 50px;
 
     font-size: 24px;
-    line-height: calc(28 / 24);
+    line-height: 1.17;
   }
 
   .reviews-item {
@@ -139,7 +139,7 @@
     min-width: 222px;
 
     font-size: 18px;
-    line-height: calc(22 / 18);
+    line-height: 1.22;
   }
 
   .reviews .swiper-pagination2 {

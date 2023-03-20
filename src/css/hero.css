@@ -20,7 +20,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     color: #FFFFFF;
     text-align: left;
@@ -37,7 +37,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     color: #FFFFFF;
     border: none;
     margin-right: 10px;
@@ -55,7 +55,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
     padding: 11px 20px;
@@ -111,7 +111,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21;
     letter-spacing: -0.03em;
     padding-top: 671px;
     color: #FFFFFF;
@@ -133,7 +133,7 @@
     height: 18px;  
     font-weight: 500;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
 }
 
 }
