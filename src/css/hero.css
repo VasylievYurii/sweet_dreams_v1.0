@@ -2,7 +2,6 @@
 
 .hero {
     width: 335px;
-    height: 621px;
     background-image: url(../img/hero/mobile-background-hero.jpg);
     background-position: center ;
     background-repeat: no-repeat;
@@ -96,7 +95,6 @@
 
 .hero {
     width: 704px;
-    height: 890px;
     padding-right: 40px;
     padding-left: 40px;
     background-image: url(../img/hero/tablet-background-hero.jpg);
@@ -148,8 +146,12 @@
 }
 
 .hero-container {
-    width: 1136px;
     height: 600px;
 }
+
+.hero-title-text {
+    padding-top: 381px;
+}
+
 }
 
