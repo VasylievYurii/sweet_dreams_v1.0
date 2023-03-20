@@ -108,11 +108,13 @@
 }
 .menu-close-icon {
   stroke: rgba(255, 255, 255, 1);
-  transition: stroke 250ms var(--timing-function);
+  transform: scale(100%);
+  transition: stroke 250ms var(--timing-function), transform 250ms var(--timing-function);
 }
 .menu-close-icon:focus,
 .menu-close-icon:hover {
   stroke: rgba(253, 146, 34, 1);
+  transform: scale(143%);
 }
 .nav-mob {
 }
