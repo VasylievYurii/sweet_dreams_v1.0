@@ -16,8 +16,6 @@
     background-image: url(../img/hero/mobile-background-hero@2x.jpg);
   }
 }
-.hero-container {
-}
 .hero-title-text {
   font-weight: 500;
   font-size: 20px;
@@ -28,9 +26,13 @@
   padding-top: 395px;
   margin-bottom: 32px;
 }
-
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .hero-btn {
-  width: 120px;
+  min-width: 120px;
   height: 41px;
   background: var(--color-orange);
   border-radius: 100px;
@@ -39,18 +41,16 @@
   line-height: 1.21;
   color: var(--color-white-default);
   border: none;
-  margin-right: 10px;
+  margin-right: 14px;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--color-light-orange);
   color: var(--color-orange);
 }
-
 .hero-link {
   font-weight: 600;
   font-size: 14px;
@@ -83,7 +83,6 @@
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-
 .hero-scroll-link .hero-scroll-wrapper {
   background: var(--color-white-default);
   color: var(--color-orange);
@@ -110,7 +109,6 @@
   margin-top: 32px;
   padding-bottom: 21px;
 }
-
 .hero-scroll-icon {
   width: 16px;
   height: 16px;
@@ -134,8 +132,6 @@
       background-image: url(../img/hero/tablet-background-hero@2x.jpg);
     }
   }
-  .hero-container {
-  }
   .hero-wrapper {
     display: flex;
     align-items: center;
@@ -150,13 +146,11 @@
     padding-top: 671px;
     color: var(--color-white-default);
   }
-
   .hero-btn {
     width: 144px;
     height: 45px;
     margin-right: 14px;
   }
-
   .hero-link {
     padding: 13px 39px;
   }
@@ -178,17 +172,20 @@
     width: 38px;
     height: 38px;
   }
+  .hero-scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
   .hero {
     width: 1136px;
     background-image: url(../img/hero/desktop-background-hero.jpg);
-    margin-bottom: 72px;
   }
-
-  .hero-container {
-  }
-
   .hero-title-text {
     padding-top: 381px;
   }
@@ -202,7 +199,7 @@
       background-image: url(../img/hero/desktop-background-hero@2x.jpg);
     }
   }
-  .hero-scroll-icon{
+  .hero-scroll-icon {
     width: 22px;
     height: 22px;
   }
