@@ -28,6 +28,8 @@
 }
 
 .subscribe-parag {
+  width:100%;
+  max-width: 326px;
   margin: 0 auto 24px auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -223,9 +225,7 @@
     width: 291px;
   }
 
-  .subscribe-parag {
-    width: 326px;
-  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -249,11 +249,11 @@
   }
 
   .subscribe-parag {
-    width: 467px;
+    max-width: 467px;
   }
 
   .subscribe-btn {
-    width: 172px;
+    min-width: 172px;
     height: 50px;
     font-size: 18px;
     line-height: 1.22;
