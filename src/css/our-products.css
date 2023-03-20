@@ -1,13 +1,13 @@
 .our-products {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 .our-products-title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   margin-bottom: 32px;
@@ -15,27 +15,14 @@
 .our-products-title-text {
   color: var(--color-orange);
 }
-/* .our-products-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 18px;
-} */
 .our-products-item {
-  width: 240px;
-
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 32px 52px;
+  border: 1px solid var(--color-black-transparent);
   border-radius: 15px;
   background: var(--color-white-default);
 }
-/* .our-products-item:not(:last-child) {
-  margin-left: 18px;
-} */
 .our-products-img-wrapper {
-  padding: 32px 20px 8px;
-}
-.our-products-content-wrapper {
-  padding-bottom: 32px;
+  margin-bottom: 8px;
 }
 .our-products-content-wrapper-title {
   font-family: 'Montserrat';
@@ -61,8 +48,8 @@
 .our-products-price {
   width: 94px;
   height: 33px;
-  background: #fafafa;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--color-white);
+  border: 1px solid var(--color-black-transparent);
   border-radius: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -86,11 +73,38 @@
 .swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
-  background: #fd9222;
+  background: var(--color-orange);
   border-radius: 7px;
 }
 
 .swiper-pagination {
   position: unset;
-  margin-top: 31px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-products-title {
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 50px;
+  }
+  .our-products-item {
+    padding: 32px 20px;
+  }
+
+  .swiper-pagination {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-products {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
