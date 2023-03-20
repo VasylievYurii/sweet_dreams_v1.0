@@ -78,15 +78,23 @@
   height: 100%;
   padding-top: 28px;
   padding-bottom: 23px;
-  opacity: 0;
+  /* opacity: 0; */
   visibility: hidden;
   pointer-events: none;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   right: 0;
+  transition: transform 250ms var(--timing-function),
+    visibility 250ms var(--timing-function);
+  transform: translateX(100%);
 }
+
 .mob-menu.is-open {
-  opacity: 1;
+  transform: translateX(0);
+  transition: transform 250ms var(--timing-function),
+    visibility 250ms var(--timing-function);
+
+  /* opacity: 1; */
   visibility: visible;
   pointer-events: initial;
 }
