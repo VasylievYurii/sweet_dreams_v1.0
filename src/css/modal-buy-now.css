@@ -1,10 +1,11 @@
 .modal-buy-now {
   /* display: none; */
-  
+
   /* position: relative;
   margin-left: auto;
   margin-right: auto; */
- width: 311px;
+  width: 311px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,6 +23,22 @@
   transition: transform 250ms var(--timing-function),
     opacity 250ms var(--timing-function);
   /* outline: 1px solid tomato; */
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Ширина прокрутки */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-orange); /* Колір фону прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-placeholder); /* Колір прокрутки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange); /* Колір прокрутки при наведенні */
 }
 
 .modal-buy,
@@ -153,6 +170,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .modal-buy-input::placeholder {
@@ -160,6 +178,11 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-placeholder);
+}
+
+.modal-buy-input:focus {
+  border-color: var(--color-orange);
+  outline: none;
 }
 
 .modal-buy-personal {
@@ -272,7 +295,8 @@
   outline: none;
 }
 
-.swiper3{
+
+.swiper3 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -286,8 +310,8 @@
   margin-top: 20px;
   /* position: absolute; */
   text-align: center;
-  transition: .3s opacity;
-  transform: translate3d(0,0,0);
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
 }
 
 /* li .buy-choco-item.swiper-slide{
@@ -310,7 +334,9 @@
 
     border-radius: 15px;
   }
-/* .buy-choco-item{
+
+  /* .buy-choco-item{
+
   width: 160px;
 } */
   .buy-choco-list {
@@ -441,7 +467,7 @@
   background-size: 276px;
 
   transition: transform 250ms var(--timing-function),
-        opacity 250ms var(--timing-function);
+    opacity 250ms var(--timing-function);
 }
 
 @media (min-device-pixel-ratio: 2),
