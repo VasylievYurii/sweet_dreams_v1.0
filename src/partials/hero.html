@@ -4,18 +4,26 @@
 Кнопка “Buy now” відкриває модальне вікно “Buy now”.
 Кнопка “How it’s made” є якірним посиланням до секції “How it’s made”.
 Кнопка “Scroll down” є якірним посиланням до Footerу. -->
-<section class="hero container">
+<section class="hero-section">
+  <div class="hero container">
     <div class="hero-container">
-        <h1 class="hero-title visually-hidden">Buy Chocolate</h1>
-        <h2 class="hero-title-text">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
+      <h1 class="hero-title visually-hidden">Buy Chocolate</h1>
+      <h2 class="hero-title-text">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h2>
+      <div class="hero-wrapper">
         <button type="button" class="hero-btn js-buy-open-btn">Buy now</button>
-        <a class="hero-link">How it’s made</a>
-        <p class="hero-scroll">scroll down</p>
-        <a class="hero-scroll-link">
-            <!-- <svg>
-                <use></use>
-            </svg> -->
+        <a href="#how-its-made" class="hero-link">How it’s made</a>
+        <a href="#footer" class="hero-scroll-link">
+          <p class="hero-scroll">scroll down</p>
+          <div class="hero-scroll-wrapper">
+            <svg class="hero-scroll-icon" width="16" height="16">
+              <use href="../img/icons.svg#angle"></use>
+            </svg>
+          </div>
         </a>
+      </div>
     </div>
+  </div>
 </section>
-
