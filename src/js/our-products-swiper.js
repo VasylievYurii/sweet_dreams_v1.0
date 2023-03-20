@@ -21,3 +21,22 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 });
+
+const swiper2 = new Swiper('.swiper2', {
+  spaceBetween: 18,
+  slidesPerView: 1,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination2',
+  },
+});
