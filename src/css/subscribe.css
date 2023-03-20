@@ -70,32 +70,25 @@
 
 .subscribe-form {
   position: absolute;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+
+  transform: translate(-50%, -50%) scale(1);
   width: 311px;
   height: 350px;
   border-radius: 15px;
   background-color: var(--color-white-default);
   overflow: hidden;
   opacity: 1;
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
 }
 
 .subscribe-form-hidden {
   opacity: 0;
   pointer-events: none;
+  transform: translate(-50%, -50%) scale(1.2);
 
-  white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
 }
 
 .subscribe-form-close {
