@@ -7,8 +7,6 @@
 }
 
 .how-its-made-title{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -43,24 +41,18 @@
     padding: 20px 14px;
     margin-top: 20px;
 
-    background: #FFFFFF;
+    background: var(--color-white-default);
     border-radius: 15px;
 }
 
 .how-its-made-article-title{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
-
     margin-bottom: 20px;
 }
 
 .how-its-made-list{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.23;
     letter-spacing: -0.02em;
