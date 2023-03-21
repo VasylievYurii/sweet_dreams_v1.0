@@ -190,7 +190,7 @@
     padding-top: 381px;
   }
   .hero-scroll-link {
-    margin-left: 585px;
+    margin-left: auto;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
