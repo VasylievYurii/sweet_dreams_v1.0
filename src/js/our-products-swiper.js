@@ -1,7 +1,11 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation, Pagination} from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.min.css';
 
 const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
   spaceBetween: 18,
   slidesPerView: 1,
   grabCursor: true,
@@ -26,6 +30,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiper2 = new Swiper('.swiper2', {
+  modules: [Navigation, Pagination],
   spaceBetween: 16,
   slidesPerView: 1,
   loop: true,
@@ -46,6 +51,7 @@ const swiper2 = new Swiper('.swiper2', {
 });
 
 const swiper3 = new Swiper('.swiper3', {
+  modules: [Navigation, Pagination],
   spaceBetween: 16,
   slidesPerView: 1,
   loop: true,
