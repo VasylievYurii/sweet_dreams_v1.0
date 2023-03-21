@@ -15,10 +15,14 @@
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.caja{
+.unique-components{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 70px;
+}
+
+.container {
+border: 1px solid tomato;
 }
 
 .unique-h2{
