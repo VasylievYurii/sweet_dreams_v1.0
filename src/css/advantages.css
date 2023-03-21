@@ -98,5 +98,10 @@
 
   .advantages-list .advantages-item:last-child::after {
     display: none;
-  }
+    }
+    .advantages-list .advantages-item:last-child{
+      padding-right: 0;
+      width: 308px;
+    }
+
 }
