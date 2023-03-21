@@ -90,6 +90,7 @@
 .unique-li {
     width: 335px;
     height: 270px;
+    perspective: 3000px;
 }
 
 .unique-li:hover .card {
