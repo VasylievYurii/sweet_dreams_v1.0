@@ -90,9 +90,8 @@
   background-color: var(--color-orange);
 }
 
-.reviews .swiper-pagination2 {
+.swiper-pagination2 {
   margin-top: 20px;
-  /* position: absolute; */
   text-align: center;
   transition: .3s opacity;
   transform: translate3d(0,0,0);
@@ -142,7 +141,7 @@
     line-height: 1.22;
   }
 
-  .reviews .swiper-pagination2 {
+.swiper-pagination2 {
     margin-top: 31px;
     /* position: absolute; */
     text-align: center;

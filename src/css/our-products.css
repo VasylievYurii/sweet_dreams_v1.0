@@ -2,9 +2,25 @@
   padding-top: 36px;
   padding-bottom: 36px;
 }
+
+.swiper1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;}
+
+  .swiper-pagination1 {
+    margin-top: 20px;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+  }
+
 .our-products-title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -25,8 +41,6 @@
   margin-bottom: 8px;
 }
 .our-products-content-wrapper-title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -35,9 +49,6 @@
   margin-bottom: 2px;
 }
 .our-products-content-wrapper-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -55,8 +66,6 @@
   margin-right: auto;
 }
 .our-products-content-wrapper-price {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -64,22 +73,18 @@
   text-align: center;
   padding: 8px 18px 8px 18px;
 }
-.swiper-pagination-bullet {
+
+span.swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background: rgba(17, 17, 17, 0.5);
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
   background: var(--color-orange);
   border-radius: 7px;
-}
-
-.swiper-pagination {
-  position: unset;
-  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,16 +95,14 @@
   .our-products-title {
     font-size: 24px;
     line-height: 1.17;
-    text-align: center;
-    letter-spacing: -0.03em;
     margin-bottom: 50px;
   }
   .our-products-item {
     padding: 32px 20px;
   }
 
-  .swiper-pagination {
-    margin-top: 32px;
+  .swiper-pagination1 {
+    margin-top: 31px;
   }
 }
 @media screen and (min-width: 1200px) {

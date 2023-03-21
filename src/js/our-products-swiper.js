@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.min.css';
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper1', {
   modules: [Navigation, Pagination],
   spaceBetween: 18,
   slidesPerView: 1,
@@ -22,10 +22,8 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 4,
     },
   },
-
-  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
   },
 });
 
@@ -33,6 +31,11 @@ const swiper2 = new Swiper('.swiper2', {
   modules: [Navigation, Pagination],
   spaceBetween: 16,
   slidesPerView: 1,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  mousewheel: {
+    sensitivity: 1,
+  },
   loop: true,
   breakpoints: {
     768: {
@@ -43,8 +46,6 @@ const swiper2 = new Swiper('.swiper2', {
       slidesPerView: 3,
     },
   },
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination2',
   },
@@ -54,6 +55,11 @@ const swiper3 = new Swiper('.swiper3', {
   modules: [Navigation, Pagination],
   spaceBetween: 16,
   slidesPerView: 1,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  mousewheel: {
+    sensitivity: 1,
+  },
   loop: true,
   breakpoints: {
     768: {
@@ -63,7 +69,6 @@ const swiper3 = new Swiper('.swiper3', {
       slidesPerView: 3,
     },
   },
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination3',
   },
