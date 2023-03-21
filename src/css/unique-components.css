@@ -30,6 +30,7 @@ border: 1px solid tomato;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    line-height: 1.28;
     letter-spacing: 0.03em;
     padding-bottom: 24px;
 
@@ -47,18 +48,44 @@ border: 1px solid tomato;
     padding-bottom: 30px;
 }
 
+.unique-ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+}
+
 .unique-chocolad{
 
-    background-color:var(--color-orange) ;
-    color: var(--color-white-default); 
+    
     border-radius: 15px;
     position: absolute;
     width: 100%;
-    height: 270px; 
+    /* height: 270px;  */
+    display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+
     transition: transform 250ms;
     cursor: pointer;
     transform-style: preserve-3d;
 
+}
+
+.unique-chocolad--orange {
+    background-color: var(--color-orange);
+    color: var(--color-white-default);
+}
+
+.unique-chocolad--white {
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    border: 1px solid var(--color-orange);
+}
+
+.unique-chocolad--black {
+    background-color: var(--color-dark-purple);
+    color: var(--color-white);
 }
 
 .unique-milk{
@@ -70,17 +97,30 @@ border: 1px solid tomato;
 
 .card{
     width: 100%;
-    height: 270px;
+    height: 100%;
+    
+
+    /* padding: 28px; */
+
+    /* display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center; */
+
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: relative;  
+    position: relative; 
+     
 }
 
 .unique-li{
-    max-width: 335px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 
+    width: 335px;
+    height: 270px;
 }
 .unique-li:hover .card{
     transform: rotateY(180deg);
@@ -89,9 +129,18 @@ border: 1px solid tomato;
 }
 .unique-card{
     position: absolute;
+
      width: 100%;
-     margin-bottom: 20px;
-     backface-visibility: hidden;
+     height: 100%;
+    padding: 28px;
+     
+    backface-visibility: hidden;
+
+    
+}
+
+.unique-mains{
+    align-self: flex-start;
 }
 
 
@@ -103,8 +152,10 @@ border: 1px solid tomato;
 }
 
 .unique-anime{
-    background-color: var(--color-white-default);
-    border-radius: 15px;
+
+    /* border-radius: 15px;
+    overflow: hidden; */
+
     padding: 28px;
     transform: rotateY(180deg);
     
@@ -142,11 +193,8 @@ border: 1px solid tomato;
     font-weight: 400;
     font-size: 10px;
 }
-.milkchok{
-    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
-    border: 1px solid var(--color-orange);
-    height: 100%;
-    border-radius: 15px;
+/* .milkchok{
+    
 
 }
 .milk{
@@ -165,4 +213,4 @@ border: 1px solid tomato;
     border: 1px solid var(--color-orange);
     border-radius:15px;
     height: 100%;
-}
+} */
