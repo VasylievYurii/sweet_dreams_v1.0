@@ -207,6 +207,10 @@
         height: 270px;
     }
 
+    .unique-li--reordered {
+        order: 1;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -228,6 +232,9 @@
     .unique-img {
         width: 206px;
         height: auto;
+    }
+    .unique-li--reordered {
+        order: 0;
     }
 
 
