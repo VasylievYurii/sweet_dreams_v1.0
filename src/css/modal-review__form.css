@@ -31,10 +31,10 @@
 
 .modal-review {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%) scale(1);
 
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
 }
 
 .modal-review--hidden {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translateX(-50%) scale(1.2);
   opacity: 0;
   pointer-events: none;
 }
