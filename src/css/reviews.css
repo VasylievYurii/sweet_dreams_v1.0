@@ -143,10 +143,6 @@
 
 .swiper-pagination2 {
     margin-top: 31px;
-    /* position: absolute; */
-    text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0,0,0);
   }
 }
 
@@ -158,7 +154,6 @@
 
   .reviews-item {
     width: 360px;
-    /* margin-right: 28px; */
   }
 
 

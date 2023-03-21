@@ -48,7 +48,7 @@
   }
 }
 
-.footer-heading-accent-cololr {
+.footer-heading-accent-color {
   color: var(--color-orange);
 }
 
@@ -82,7 +82,6 @@
 }
 
 .footer-contacts-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;

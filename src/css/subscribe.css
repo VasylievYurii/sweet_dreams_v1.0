@@ -16,8 +16,6 @@
 
 .subscribe-title {
   margin: 0 auto 24px auto;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -31,9 +29,6 @@
   width:100%;
   max-width: 326px;
   margin: 0 auto 24px auto;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -50,8 +45,6 @@
   border-radius: 100px;
   background-color: var(--color-orange);
   padding: 12px 28px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -129,7 +122,6 @@
 
 .subscribe-form-img {
   width: 100%;
-  /* height: 169px; */
 }
 
 .subscribe-form-text {
@@ -137,8 +129,6 @@
 }
 
 .subscribe-form-title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -175,9 +165,6 @@
 }
 
 .subscribe-form-input:placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   display: flex;

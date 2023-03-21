@@ -3,8 +3,6 @@
     padding-bottom: 36px;
 }
 
-
-
 .unique-h2 {
     color: var(--color-black);
     font-weight: 600;
@@ -13,6 +11,8 @@
     line-height: 1.28;
     letter-spacing: 0.03em;
     padding-bottom: 24px;
+    text-transform: uppercase;
+    margin: 0 auto;
 
 }
 
@@ -21,11 +21,12 @@
 }
 
 .unique-text {
+    max-width: 335px;
     color: var(--color-black);
-    font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0 auto;
     padding-bottom: 30px;
 }
 
@@ -38,8 +39,6 @@
 }
 
 .unique-chocolate {
-
-
     border-radius: 15px;
     position: absolute;
     width: 100%;
@@ -103,10 +102,7 @@
     width: 100%;
     height: 100%;
     padding: 28px;
-
     backface-visibility: hidden;
-
-
 }
 
 .unique-mains {
@@ -116,7 +112,6 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-
 }
 
 
@@ -130,18 +125,14 @@
 }
 
 .unique-anime {
-
     padding: 28px;
     transform: rotateY(180deg);
     background-color: var(--color-white-default);
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .unique-anime-text {
-
-    /* Fix for overlay text */
     height: 146px;
     overflow: hidden;
 
@@ -149,14 +140,12 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: 0.02em;
-
 }
 
 .button {
     display: flex;
     margin-top: 8px;
     margin-bottom: 14px;
-
 }
 
 .unique-nobutton {
@@ -164,15 +153,11 @@
     color: var(--color-white-default);
     margin-right: 6px;
     text-align: center;
-
     font-size: 10px;
     line-height: 1.2;
 
     border-radius: 35px;
     padding: 6px 16px;
-
-
-
 }
 
 .unique-nobutton2 {
@@ -182,10 +167,8 @@
 
     font-size: 10px;
     line-height: 1.2;
-
     border-radius: 35px;
     padding: 6px 16px;
-
 }
 
 .unique-img {
@@ -195,12 +178,10 @@
 
 @media screen and (min-width: 768px) {
     .unique-ul {
-
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 30px;
         column-gap: 32px;
-        align-items: center;
         justify-content: center;
     }
 
@@ -217,21 +198,25 @@
         padding-top: 100px;
         padding-bottom: 50px;
     }
-
+    .unique-text{
+    max-width: 486px;
+    }
+    .unique-h2{
+        max-width: 411px;
+        font-size: 24px;
+        line-height: 1.67;
+        letter-spacing: -0.03em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .unique-ul {
-
         flex-direction: row;
         flex-wrap: nowrap;
         column-gap: 19px;
-        align-items: center;
-        justify-content: center;
     }
 
     .unique-li {
-
         width: 270px;
         height: 270px;
     }
@@ -249,6 +234,8 @@
         padding-top: 128px;
         padding-bottom: 64px;
     }
-
+    .unique-text{
+        max-width: 486px;
+        }
 
 }
