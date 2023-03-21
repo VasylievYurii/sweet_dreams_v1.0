@@ -1,6 +1,6 @@
 .subscribe {
   position: relative;
-  background-image: url('../img/subscribe/mobile-background-subscribe.jpg');
+  background-image: url('./img/subscribe/mobile-background-subscribe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 62px 0;
@@ -10,7 +10,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe {
-    background-image: url('../img/subscribe/mobile-background-subscribe@2x.jpg');
+    background-image: url('./img/subscribe/mobile-background-subscribe@2x.jpg');
   }
 }
 
@@ -223,7 +223,7 @@
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    background-image: url('../img/subscribe/tablet-background-subscribe.jpg');
+    background-image: url('./img/subscribe/tablet-background-subscribe.jpg');
     padding: 72px 0;
   }
 
@@ -231,7 +231,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url('../img/subscribe/tablet-background-subscribe@2x.jpg');
+      background-image: url('./img/subscribe/tablet-background-subscribe@2x.jpg');
     }
   }
 
@@ -313,14 +313,14 @@
 
 @media screen and (min-width: 1200px) {
   .subscribe {
-    background-image: url('../img/subscribe/desktop-background-subscribe.jpg');
+    background-image: url('./img/subscribe/desktop-background-subscribe.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url('../img/subscribe/desktop-background-subscribe@2x.jpg');
+      background-image: url('./img/subscribe/desktop-background-subscribe@2x.jpg');
     }
   }
 
