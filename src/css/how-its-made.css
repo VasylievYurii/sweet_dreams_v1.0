@@ -2,8 +2,8 @@
     width: 100%;
     margin-right:auto;
     margin-left: auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .how-its-made-title{
@@ -76,6 +76,10 @@
 }
 
 @media screen and (min-width: 768px){
+    .how-its-made-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .how-its-made-container.container{
         padding-left: 77px;
         padding-right: 77px;
@@ -103,6 +107,11 @@
 }
 
 @media screen and (min-width: 1200px){
+        .how-its-made-container{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .how-its-made-container.container{
         padding-left: 32px;
         padding-right: 32px;
