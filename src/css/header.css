@@ -1,8 +1,8 @@
 .header {
   display: flex;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 19px;
+  padding-top: 25px;
+  padding-bottom: 19px;
 }
 .header-title {
   display: flex;
@@ -175,8 +175,8 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    margin-top: 31px;
-    margin-bottom: 31px;
+   padding-top: 25px;
+  padding-bottom: 19px;
   }
   .mob-soc-icon {
     width: 24px;
@@ -196,7 +196,7 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    margin-bottom: 36px;
+  padding-bottom: 36px;
   }
   .mob-menu {
     display: none;
