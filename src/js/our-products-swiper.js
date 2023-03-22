@@ -1,16 +1,18 @@
-import Swiper, { Navigation, Pagination} from 'swiper';
+import Swiper, { Pagination, Mousewheel} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.min.css';
 
 const swiper1 = new Swiper('.swiper1', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination, Mousewheel],
   spaceBetween: 18,
   slidesPerView: 1,
   grabCursor: true,
   slideToClickedSlide: true,
+  loop: true,
   mousewheel: {
+    enabled: true,
     sensitivity: 1,
   },
   loop: true,
@@ -24,16 +26,19 @@ const swiper1 = new Swiper('.swiper1', {
   },
   pagination: {
     el: '.swiper-pagination1',
+    clickable: true
   },
 });
 
 const swiper2 = new Swiper('.swiper2', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination, Mousewheel],
   spaceBetween: 16,
   slidesPerView: 1,
   grabCursor: true,
   slideToClickedSlide: true,
+  loop: true,
   mousewheel: {
+    enabled: true,
     sensitivity: 1,
   },
   loop: true,
@@ -48,16 +53,19 @@ const swiper2 = new Swiper('.swiper2', {
   },
   pagination: {
     el: '.swiper-pagination2',
+    clickable: true
   },
 });
 
 const swiper3 = new Swiper('.swiper3', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination, Mousewheel],
   spaceBetween: 16,
   slidesPerView: 1,
   grabCursor: true,
   slideToClickedSlide: true,
+  loop: true,
   mousewheel: {
+    enabled: true,
     sensitivity: 1,
   },
   loop: true,
@@ -71,5 +79,6 @@ const swiper3 = new Swiper('.swiper3', {
   },
   pagination: {
     el: '.swiper-pagination3',
+    clickable: true
   },
 });
