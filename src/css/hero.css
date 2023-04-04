@@ -106,6 +106,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-left: auto;
   margin-top: 32px;
   padding-bottom: 21px;
 }
@@ -114,6 +115,46 @@
   height: 16px;
   fill: currentColor;
 }
+
+/*=============== SCROLL DOWN ================*/
+
+.scroll-down {
+  position: fixed;
+  right: 130px;
+  bottom: 70px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-down-hide {
+  display: none;
+}
+
+.scroll-down .hero-scroll {
+  color: transparent;
+  /* color: var(--color-white); */
+}
+
+.scroll-down:hover .hero-scroll,
+.scroll-down:focus .hero-scroll {
+  color: var(--color-orange);
+}
+
+.scroll-down .hero-scroll-wrapper {
+  background: transparent;
+  /* background: var(--color-white-default); */
+  color: var(--color-orange);
+}
+
+.scroll-down:hover .hero-scroll-wrapper,
+.scroll-down:focus .hero-scroll-wrapper {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+
+/*=============== /SCROLL DOWN ================*/
 
 @media screen and (min-width: 768px) {
   .hero-section {
