@@ -1,8 +1,11 @@
-window.addEventListener('scroll', () => {
+const heroSection = document.querySelector('.hero-container');
+const link = document.querySelector('.js-scroll-down');
+const footer = document.querySelector('.footer');
+
+window.addEventListener('scroll', updateLinkClass);
+
+function updateLinkClass() {
   if (window.innerWidth >= 1200) {
-    const heroSection = document.querySelector('.hero-container');
-    const link = document.querySelector('.js-scroll-down');
-    const footer = document.querySelector('.footer');
     const linkRect = link.getBoundingClientRect();
     const heroRect = heroSection.getBoundingClientRect();
     const footerRect = footer.getBoundingClientRect();
@@ -17,4 +20,4 @@ window.addEventListener('scroll', () => {
       link.classList.remove('sticky');
     }
   }
-});
+}

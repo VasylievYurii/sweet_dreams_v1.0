@@ -38,7 +38,7 @@
 .menu-open {
   position: fixed;
   top: 20px;
-  z-index: 100;
+  z-index: 2;
   right: calc(50% - 353px / 2);
   display: block;
   align-items: center;
