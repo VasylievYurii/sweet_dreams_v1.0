@@ -186,12 +186,6 @@
     width: 1136px;
     background-image: url(../img/hero/desktop-background-hero.jpg);
   }
-  .hero-title-text {
-    padding-top: 381px;
-  }
-  .hero-scroll-link {
-    margin-left: auto;
-  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -199,8 +193,34 @@
       background-image: url(../img/hero/desktop-background-hero@2x.jpg);
     }
   }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-title-text {
+    padding-top: 381px;
+  }
+
+  .hero-scroll-link {
+    position: absolute;
+    bottom: 40px;
+    right: calc(50% - (1056px / 2));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
   .hero-scroll-icon {
     width: 22px;
     height: 22px;
+  }
+
+  .sticky {
+    height: 38px;
+    position: fixed;
+    z-index: 100;
+    top: 30px;
+    right: calc(50% - (1056px / 2));
   }
 }
